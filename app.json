@@ -1,7 +1,7 @@
 {
-  "name": "BOT KAMPANG",
+  "name": "BOT-SPACE FROM BASE KAMPANG-BOT",
   "description": "[SPACE BOT] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
-  "logo": "https://telegra.ph/file/ecacf51f2ee342ba5d3e1.jpg",
+  "logo": "https://telegra.ph/file/9ff45dd6812f6ac179145.jpg",
   "keywords": [
     "telegram",
     "userbot",
