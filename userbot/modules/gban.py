@@ -1,3 +1,8 @@
+# Fixed By Koala @manusiarakitann
+# jangan datang hanya saat perlu :) aku bukan tuhan
+# Lord-Userbot
+# Lu kontollll..
+
 import asyncio
 from datetime import datetime
 
