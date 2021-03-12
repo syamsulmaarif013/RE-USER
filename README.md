@@ -26,6 +26,7 @@
 </p>
 <h1>SPACE-BOT</h1>
 <b>BASE BOT FROM: <a href="https://github.com/ManusiaRakitan/Kampang-Bot">KAMPANG-BOT!</b>
+<b>SUPPORT CHANNEL: <a href="https://t.me/storyangkasa)>STORY LEO!</b>
 <br>
 <br>
 
