@@ -25,7 +25,7 @@ async def help(event):
             await event.delete()
     else:
         await event.edit(f"**╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮**\
-            \n│   Help for [💫ANGKASA BOT💫]\
+            \n│   Help for [SPACE-BOT]\
             \n╰►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╯ \
             \n╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\
             \n│   Untuk melihat lengkap Command\
@@ -35,9 +35,9 @@ async def help(event):
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
-            string += "`\t🔹 "
+            string += "`\t✬"
         await event.reply(f"•{string}•"
-                          "\nPANTEKKK....")
+                          "\nJANGAN TYPO TOLOL....")
         await event.reply(f"\n**Ketik Contoh** `.help afk` **Untuk Informasi Module**")
         await asyncio.sleep(1000)
         await event.delete()
