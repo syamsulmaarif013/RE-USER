@@ -61,10 +61,10 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"**🚀AFK!**\nJANGAN GANGGU...\
+        await afk_e.edit(f"**۩ᴀғᴋ!!**\۩ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ ᴅᴜʟᴜᴜᴜ...\
         \nKarena: `{string}`")
     else:
-        await afk_e.edit("**🚀AFK!**\nLAGI SIBUK! JANGAN KANGEN DULU!")
+        await afk_e.edit("**۩ᴀғᴋ!!**\۩sɪʙᴜᴋ! ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ ᴅᴜʟᴜᴜᴜ!")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + "【ʙᴜꜱʏ】"))
     else:
@@ -97,7 +97,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("**OKE, Gua Balek Lah PANTEK!**")
+        msg = await notafk.respond("**🄾🄺🄴, 🄶🅄🄰 🅄🄳🄰 🄱🄰🄻🄴🄺 🄻🄰🄷 🄿🄰🄽🅃🄴🄺!**")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
@@ -165,7 +165,7 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣LAGI AFK! {afk_since} Yg Lalu.\
+                    await mention.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n↪ʟᴀɢɪ ᴀғᴋ! {afk_since} Yg Lalu.\
                         \n⛣ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
