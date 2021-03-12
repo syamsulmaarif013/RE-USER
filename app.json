@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/AngkasaBoy/Space-Bot",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
-  "success_url": "https://t.me/mixiologist",
+  "success_url": "https://t.me/leoangkasaaa",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -193,7 +193,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
-      "value": "lu tinggal dimana kenalan yuk",
+      "value": "ISI KOTA LU YA",
       "required": false
     },
     "LOGSPAMMER": {
