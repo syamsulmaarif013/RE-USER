@@ -239,7 +239,7 @@ async def amireallyalive(alive):
         f"⫸ **ᴘʏᴛʜᴏɴ**   \n   ➲ `Versi {python_version()}` \n"
         f"⫸ **ʙᴏᴛ ᴠᴇʀsɪᴏɴ**\n   ➲ `{BOT_VER}` \n"
         f"⫸ **ᴍᴏᴅᴜʟᴇ**    \n   ➲ `{len(modules)}` \n\n"
-        f"⫸ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [ANGKASA BOT](https://github.com/AngkasaBoy/Angkasa-Bot)\n⫸ **sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ: **[Support](t.me/storyangkasa)\n⫸ **sᴜᴘᴘᴏʀᴛ ʙʏ:** [Leo Angkasa](t.me/leoangkasaaa)\n"
+        f"⫸ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot)\n⫸ **sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ: **[CHANNEL](t.me/storyangkasa)\n⫸ **sᴜᴘᴘᴏʀᴛ ʙʏ:** [Leo Angkasa](t.me/leoangkasaaa)\n"
         f"**|I|•-------------» ᴀsᴛʀᴏʙᴏʏ «-------------•|I|**")
 
     if ALIVE_LOGO:
