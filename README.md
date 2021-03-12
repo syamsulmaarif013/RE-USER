@@ -20,12 +20,12 @@
 <h2 align="center"><b>BOT: <a href="https://telegram.dog/leoangkasaaa">ANGKASA ░ 💫</a></b></h2>
 <br>
 <p align="center">
-   <a href="https://github.com/AngkasaBoy/Space-Bot"><img src="https://telegra.ph/file/9ff45dd6812f6ac179145.jpg" alt="BOT-KAMPANG" width=400px></a>
+   <a href="https://github.com/AngkasaBoy/Space-Bot"><img src="https://telegra.ph/file/9ff45dd6812f6ac179145.jpg" alt="SPACE-BOT" width=400px></a>
    <br>
    <br>
 </p>
 <h1>SPACE-BOT</h1>
-<b>BASE BOT FROM [KAMPANG-BOT](https://github.com/ManusiaRakitan/Kampang-Bot)!</b>
+<b>BASE BOT FROM [KAMPANG-BOT]"https://github.com/ManusiaRakitan/Kampang-Bot"!</b>
 <br>
 <br>
 
