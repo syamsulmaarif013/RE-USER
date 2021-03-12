@@ -24,16 +24,16 @@ from userbot.events import register
 
 
 KANGING_STR = [
-    "Wao.,STICKER PELER KU COLONG..",
-    "Maling sticker gpp kan mwaah",
-    "ehh ngentot tikel ny bagos colong ah...",
-    "Ini Sticker aku colong yaa\nDUARR MEMEK",
-    "leh ugha ni Sticker\nColong ahh~",
-    "Pim Pim Pom!!!\nni Sticker punya aing sekarang hehe",
+    "Wao.,STICKER JELEK GUA COLONG..",
+    "Maling sticker dulu lah",
+    "ey pantek tikel lu bagos ambil ah...",
+    "Ini Sticker Gua Colong Yaa\nGAUSA MARAH LU",
+    "Wah Boleh Juga Ni Stiker\nColong Ahh~",
+    "Bim Salabim!!!\nNih Sticker punya aing anjeng hehe",
     "Colong lagi yee kan.....",
-    "COLONG TROSS NGENTOT!!!",
-    "Bolehkah saya colong ni sticker\nau ah colong aja hehe",
-    "Colong Sticker NGAPE GA SENENG?.....",
+    "COLONG TROSS BANGSAT!!!",
+    "Colong Dulu Sabi Kan?\nSabodo Lah, Colong ae Anjeng",
+    "Gua Ambil Stiker Lu. NGAPE? GA SENENG?.....",
 ]
 
 
@@ -250,8 +250,8 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            "`Nyolong Sticker SUKSES KONTOL!`"
-            f"\n    🐨 **[KLIK TOLOL](t.me/addstickers/{packname})** 🐨\nBANGGA JADI MALING",
+            "`Nyolong Sticker SUKSES ANJENG muehehe!`"
+            f"\n    💥 **[KLIK GBLK](t.me/addstickers/{packname})** 💥\nBANGGA JADI KANG COLONG",
             parse_mode="md",
         )
 
@@ -295,10 +295,10 @@ async def get_pack_info(event):
         stickerset_attr = rep_msg.document.attributes[1]
         await event.edit("`Fetching details of the sticker pack, please wait..`")
     except BaseException:
-        return await event.edit("`Ini bukan sticker,balas ke sticker.`")
+        return await event.edit("`Balas ke sticker anjenggg.`")
 
     if not isinstance(stickerset_attr, DocumentAttributeSticker):
-        return await event.edit("`Ini bukan sticker,balas ke sticker.`")
+        return await event.edit("`Balas ke sticker anjenggg.`")
 
     get_stickerset = await bot(
         GetStickerSetRequest(
