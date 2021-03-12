@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nUserbot dyno build in progress, please wait it can take 7-8 mins`'
+                         '\nLagi Proses Build Pantek, sabar sebentar kira-kira 7-8 menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -81,24 +81,24 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         try:
             remote.push(refspec="HEAD:refs/heads/master", force=True)
         except GitCommandError as error:
-            await event.edit(f'{txt}\n`Here is the error log:\n{error}`')
+            await event.edit(f'{txt}\n`Disini Log Yang Error:\n{error}`')
             return repo.__del__()
         build = app.builds(order_by="created_at", sort="desc")[0]
         if build.status == "failed":
             await event.edit(
-                "`Build failed!\n" "Cancelled or there were some errors...`"
+                "`Build Gagal!\n" "Batal atau terdapat error! cek log sono...`"
             )
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`Successfully deployed!\n" "Restarting, please wait...`")
+            await event.edit("`Deploy Sukses!\n" "Lagi Restart, sabar anjenggg...`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#NOTE \n"
-                "OK KAMPANG Berhasil Di Update")
+                "SPACE-BOT Berhasil Di Update")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,11 +115,11 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('`**KAMPANG** Berhasil Di Update!`')
+    await event.edit('`**SPACE-BOT** Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('`KAMPANG Di Restart....`')
+    await event.edit('`SPACE-BOT Lagi Restart....`')
     await asyncio.sleep(1)
-    await event.edit('`Silahkan Tunggu TOLOL!`')
+    await event.edit('`Sabar Ya Asu!`')
     await asyncio.sleep(10)
     await event.delete()
 
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`🐨BOT KAMPANG🐨\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`SPACE🚀BOT\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**UPDATE Terbaru Untuk 🐨BOT KAMPANG🐨 [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
+        changelog_str = f'**UPDATE Terbaru Untuk SPACE🚀BOT [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog is too big, view the file to see it.`")
             file = open("output.txt", "w+")
@@ -214,10 +214,10 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Proses Update BOT KAMPANG🐨, ....🛠️`')
-        await event.edit('`Proses Update BOT KAMPANG🐨, loading....🛠️`')
-        await event.edit('`Proses Update BOT KAMPANG🐨, updating....🛠️`')
-        await event.edit('`Proses Update BOT KAMPANG🐨 silahkan tunggu kontol....🛠️`')
+        await event.edit('`Proses Update SPACE BOT🚀, ....🛠️`')
+        await event.edit('`Proses Update SPACE BOT🚀, loading....🛠️`')
+        await event.edit('`Proses Update SPACE BOT🚀, updating....🛠️`')
+        await event.edit('`Proses Update SPACE BOT🚀 silahkan tunggu goblokkk....🛠️`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
