@@ -25,7 +25,7 @@
    <br>
 </p>
 <h1>SPACE-BOT</h1>
-<b>BASE BOT FROM KAMPANG-BOT!</b>
+<b>BASE BOT FROM [KAMPANG-BOT](https://github.com/ManusiaRakitan/Kampang-Bot)!</b>
 <br>
 <br>
 
