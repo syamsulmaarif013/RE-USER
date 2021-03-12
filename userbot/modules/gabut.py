@@ -91,7 +91,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**HAI PANTEK GUA {DEFAULTUSER}**")
+    await typew.edit(f"**HALO PANTEK PEOPLE GUA {DEFAULTUSER}**")
     sleep(2)
     await typew.edit("`PUNTENNNNN.....`")
 # Owner @Si_Dian
