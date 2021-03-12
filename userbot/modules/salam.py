@@ -12,11 +12,11 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**LU KONTOL**")
+    await typew.edit(f"**PANTEK ASU**")
     sleep(3)
-    await typew.edit("`KONTOL KONTOL KONTOL!!!`")
+    await typew.edit("`PANTEK PANTEK PANTEK!!!`")
     sleep(3)
-    await typew.edit("`DASAR KEPALA KONTOL!!!`")
+    await typew.edit("`DASAR MUKA JELEK!!!`")
 # Owner @Si_Dian
 
 
@@ -24,9 +24,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**JAKA SEMBUNG BAWA GOLOK**")
+    await typew.edit(f"**ANGKASA BAWA BOTOL**")
     sleep(3)
-    await typew.edit("`NIMBRUNG GOBLOKK!!!`")
+    await typew.edit("`LU SEMUA TOLOLLL!!!`")
 # Owner @Si_Dian
 
 
@@ -44,9 +44,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**Hai PANTEK PEOPLE SAYA {DEFAULTUSER}**")
+    await typew.edit(f"**HALO PANTEK PEOPLE SAYA {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("`SALKENTOD.....`")
+    await typew.edit("`PUNTENNNN.....`")
 # Owner @Si_Dian
 
 
@@ -54,9 +54,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**Hai PANTEK PEOPLE SAYA {DEFAULTUSER}**")
+    await typew.edit(f"**HALO PANTEK PEOPLE SAYA {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("`SALKENTOD.....`")
+    await typew.edit("`PUNTENNNN.....`")
 # Owner @Si_Dian
 
 
