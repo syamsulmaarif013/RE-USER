@@ -42,17 +42,17 @@ async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
-    await pong.edit("**◆◈𝐊𝐀𝐌𝐏𝐀𝐍𝐆◈◆**")
-    await pong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
-    await pong.edit("**☬𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔☬**")
+    await pong.edit("**『⍟ᴘᴀɴᴛᴇᴋ』**")
+    await pong.edit("**◆◈sᴘᴀᴄᴇ-ʙᴏᴛ◈◆**")
+    await pong.edit("**ʟᴇɴʏᴀᴘᴋᴀɴ ᴊᴀᴍᴇᴛ ᴘᴀɴᴛᴇᴋ**")
+    await pong.edit("**☬sɪᴀᴘ ᴍᴇᴍʙᴀsᴍɪ ᴘᴀɴᴛᴇᴋ ᴘᴇᴏᴘʟᴇ ᴀsᴜ☬**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**✲ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
-                    f"\n ⫸ ᴷᵒⁿᵗᵒˡ `%sms` \n"
+    await pong.edit(f"**✲ 🅂🄿🄰🄲🄴-🄱🄾🅃** "
+                    f"\n ⫸ ᴾᴵᴺᴳᴬˢᵁ `%sms` \n"
                     f"**✲ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
 
-                    f"\n ⫸ ᴷᵃᵐᵖᵃⁿᵍ『`{ALIVE_NAME}`』 \n" % (duration))
+                    f"\n ⫸ ᴱᴷˢᴱᴷᵁᵀᴼᴿ『`{ALIVE_NAME}`』 \n" % (duration))
 
 
 @register(outgoing=True, pattern='^kntl(?: |$)(.*)')
