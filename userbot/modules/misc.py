@@ -65,7 +65,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Shutdown *ANGKASA BOT 💫*....`")
+    await event.edit("`Shutdown *SPACE BOT 💫*....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -76,7 +76,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting ANGKASA BOT💫....`")
+    await event.edit("`Restarting SPACE BOT💫....`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "💫OWNER:[LEO ANGKASA](https://t.me/leoangkasaaa)\n \n💫REPO:[BOT°ANGKASA](https://github.com/AngkasaBoy/Angkasa-Bot) \n \n💫BASE BOT FROM:[K🐨ALA](https://t.me/manusiarakitann)\n     \n"
+        "៚ OWNER:[LEO ANGKASA](https://t.me/leoangkasaaa)\n \n៚ REPO:[SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot) \n \n៚ Channel:[SUPPORT](https://t.me/storyangkasa)\n     \n"
     )
 
 
@@ -128,7 +128,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """ For .string command, just returns the string URL. """
     await wannasee.edit(
-        "🐨 **Get String:** [Press For GetString](https://repl.it/@ManusiaRakitan/stringsession#README.md)"
+        "➡ **Get String:** [Press For GetString](https://repl.it/@ManusiaRakitan/stringsession#README.md)"
     )
 
 
@@ -175,7 +175,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await bot.download_media(message, photo)
     else:
-        await img.edit("`Balas di Gambar Ngentod!!.`")
+        await img.edit("`Balas di Gambar Pantek!!.`")
         return
 
     if photo:
