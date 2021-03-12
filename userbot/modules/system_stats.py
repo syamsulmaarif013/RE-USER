@@ -165,13 +165,13 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "`╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\n "
+            "`╔═══════════════════╗\n "
             "` SPACE-BOT 🚀 Version: \n "
             f"{verout}"
             "` \n"
             "   Revision: "
             f"{revout}🇲🇨\n"
-            "╰►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╯ "
+            "╚═══════════════════╝ "
         )
     else:
         await event.edit(
@@ -232,7 +232,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**|I|•----------» sᴘᴀᴄᴇ ᴜsᴇʀʙᴏᴛ «----------•|I|**\n\n"
+        f"**❱━━━━━━━━━━━━━━❰･ sᴘᴀᴄᴇ ᴜsᴇʀʙᴏᴛ ❱━━━━━━━━━━━━━━❰**\n\n"
         f"⫸ **sᴘᴀᴄᴇɴᴀᴍᴇ**     \n   ➲ `{DEFAULTUSER}` \n"
         f"⫸ **ᴜsᴇʀɴᴀᴍᴇ** \n   ➲ `@{user.username}` \n"
         f"⫸ **ᴛᴇʟᴇᴛʜᴏɴ** \n   ➲ `Versi {version.__version__}` \n"
@@ -240,7 +240,7 @@ async def amireallyalive(alive):
         f"⫸ **ʙᴏᴛ ᴠᴇʀsɪᴏɴ**\n   ➲ `{BOT_VER}` \n"
         f"⫸ **ᴍᴏᴅᴜʟᴇ**    \n   ➲ `{len(modules)}` \n\n"
         f"⫸ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot)\n⫸ **sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ: **[CHANNEL](t.me/storyangkasa)\n⫸ **sᴜᴘᴘᴏʀᴛ ʙʏ:** [Leo Angkasa](t.me/leoangkasaaa)\n"
-        f"**|I|•-------------» ᴀsᴛʀᴏʙᴏʏ «-------------•|I|**")
+        f"**❱━━━━━━━━━━━━━━━━❰･ ᴀsᴛʀᴏʙᴏʏ ❱━━━━━━━━━━━━━━━━━❰**")
 
     if ALIVE_LOGO:
         try:
