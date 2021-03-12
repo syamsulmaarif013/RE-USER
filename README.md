@@ -17,7 +17,7 @@
 
 # Based on RaphielGang's [Telegram-Paperplane](https://github.com/RaphielGang/Telegram-Paperplane)
 
-<h2 align="center"><b>BOT: <a href="https://telegram.dog/storyangkasa">SUPPORT CHANNEL🚀</a></b></h2>
+<h2 align="center"><b>CHANNEL OFFICIAL: <a href="https://telegram.dog/storyangkasa">CHANNEL🚀</a></b></h2>
 <br>
 <p align="center">
    <a href="https://github.com/AngkasaBoy/Space-Bot"><img src="https://telegra.ph/file/9ff45dd6812f6ac179145.jpg" alt="SPACE-BOT" width=400px></a>
@@ -28,6 +28,7 @@
 <b>BASE BOT FROM: <a href="https://github.com/ManusiaRakitan/Kampang-Bot">KAMPANG-BOT!</b>
 <br>
 <br>
+    
 ## String Session
 **VAR ->** `STRING_SESSION`
 #### By HEROKU
