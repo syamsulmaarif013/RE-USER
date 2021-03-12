@@ -165,8 +165,8 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"↪JANGAN RINDU DULU! \n↪LAGI AFK! {afk_since} Yg Lalu.\
-                        \n↪Karena: `{AFKREASON}`")
+                    await mention.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣LAGI AFK! {afk_since} Yg Lalu.\
+                        \n⛣ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})
@@ -174,8 +174,8 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"↪JANGAN RINDU DULU! \n↪AFK! {afk_since}.\
-                            \n↪Karena: `{AFKREASON}`")
+                        await mention.reply(f"↪ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n↪ʟᴀɢɪ ᴀғᴋ! {afk_since}.\
+                            \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
@@ -242,8 +242,8 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)}s`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"SIBUK! Jangan Rindu... {afk_since}.\
-                        \nAlasan: `{AFKREASON}`")
+                    await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ⛣ʟᴀɢɪ ᴀғᴋ {afk_since}.\
+                        \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
@@ -251,8 +251,8 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"Lagi Sibuk! Jangan Rindu Duluu... {afk_since}.\
-                            \nAlasan: `{AFKREASON}`")
+                        await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ!⛣ʟᴀɢɪ ᴀғᴋ... {afk_since}.\
+                            \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
