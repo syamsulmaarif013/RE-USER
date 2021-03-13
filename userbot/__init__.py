@@ -402,7 +402,7 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With .help Command",
-                    text="{}\nTotal loaded Modules: {}\n               \n🐨 **MODULE INFO KAMPANG** 🐨\n".format(
+                    text="{}\nTotal loaded Modules: {}\n               \n🚀 **MODULE INFO SPACE-BOT** 🚀\n".format(
                         "🚀BOT SPACE🚀 modules helper",
                         len(dugmeler),
                     ),
@@ -426,7 +426,7 @@ with bot:
                                 "https://github.com/AngkasaBoy/Space-Bot"),
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/leoangkasaaa")],
+                                "https://t.me/storyangkasa")],
                     ],
                     link_preview=False,
                 )
