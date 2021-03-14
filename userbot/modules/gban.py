@@ -21,7 +21,7 @@ async def get_full_user(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit("`Gabisa Tolol, Tanpa ID`")
+            await event.edit("`Tanpa ID Gabisa Tolol!`")
             return
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
@@ -167,7 +167,7 @@ async def gunben(userbot):
             except BaseException:
                 b += 1
     else:
-        await dark.edit("`Balas Pesannya Ngentod`")
+        await dark.edit("`Balas Pesannya Pantek Asu`")
     try:
         if ungmute(user.id) is False:
             return await dark.edit("**Lawak Lu Badut? Dia Ga Masuk GBAN List Lu Goblok.**")
