@@ -460,7 +460,7 @@ async def ungmoot(un_gmute):
         await un_gmute.edit("`Error! User probably not gmuted.`")
     else:
         # Inform about success
-        await un_gmute.edit("```Jangan Caper lagi Lu JELEK```")
+        await un_gmute.edit("```Jangan Caper lagi Lu Pantek```")
         await sleep(3)
         await un_gmute.delete()
 
@@ -500,9 +500,9 @@ async def gspider(gspdr):
         await gspdr.edit("`Error! User probably already gmuted.\nRe-rolls the tape.`")
     else:
         if reason:
-            await gspdr.edit(f"`DIAM Lu Jelek!`\nReason: {reason}")
+            await gspdr.edit(f"`Diam Lu Jelek!`\nReason: {reason}")
         else:
-            await gspdr.edit("`DIAM Lu Jelek!`")
+            await gspdr.edit("`Diam Lu Jelek!`")
 
         if BOTLOG:
             await gspdr.client.send_message(
@@ -518,7 +518,7 @@ async def rm_deletedacc(show):
 
     con = show.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "`No deleted accounts found, Group is clean`"
+    del_status = "`Tiada Akun Terhapus, Grup Lu Bersih Asu!`"
 
     if con != "clean":
         await show.edit("`Searching for ghost/deleted/zombie accounts...`")
@@ -542,7 +542,7 @@ async def rm_deletedacc(show):
     if not admin and not creator:
         return await show.edit("`I am not an admin here!`")
 
-    await show.edit("`Deleting deleted accounts...\nOh I can do that?!?!`")
+    await show.edit("`Menghapus Akun Terhapus...\nOh Gua Bisa Lakuin Itu?!?!`")
     del_u = 0
     del_a = 0
 
@@ -561,12 +561,12 @@ async def rm_deletedacc(show):
             del_u += 1
 
     if del_u > 0:
-        del_status = f"Cleaned **{del_u}** deleted account(s)"
+        del_status = f"Membersihkan **{del_u}** akun terhapus(s)"
 
     if del_a > 0:
         del_status = (
-            f"Cleaned **{del_u}** deleted account(s) "
-            f"\n**{del_a}** deleted admin accounts are not removed"
+            f"Membersihkan **{del_u}** akun terhapus(s) "
+            f"\n**{del_a}** akun admim terhapus tidak terbersihkam"
         )
     await show.edit(del_status)
     await sleep(2)
@@ -576,7 +576,7 @@ async def rm_deletedacc(show):
         await show.client.send_message(
             BOTLOG_CHATID,
             "#CLEANUP\n"
-            f"Cleaned **{del_u}** deleted account(s) !!"
+            f"Membersihkan **{del_u}** akun terhapus(s) !!"
             f"\nCHAT: {show.chat.title}(`{show.chat_id}`)",
         )
 
@@ -585,7 +585,7 @@ async def rm_deletedacc(show):
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
-    mentions = f"<b>💩Pantek's People💩 DI {title}:</b> \n"
+    mentions = f"<b>💩Pantek's People💩 Di {title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
@@ -594,7 +594,7 @@ async def get_admin(show):
                 link = f'<a href="tg://user?id={user.id}">{user.first_name}</a>'
                 mentions += f"\n{link}"
             else:
-                mentions += f"\nDeleted Account <code>{user.id}</code>"
+                mentions += f"\nAkun Terhapus <code>{user.id}</code>"
     except ChatAdminRequiredError as err:
         mentions += " " + str(err) + "\n"
     await show.edit(mentions, parse_mode="html")
@@ -628,7 +628,7 @@ async def pin(msg):
     except BadRequestError:
         return await msg.edit(NO_PERM)
 
-    await msg.edit("`Pinned Successfully!`")
+    await msg.edit("`Pesan Berhasil Di Sematkan!`")
     await sleep(2)
     await msg.delete()
 
@@ -659,7 +659,7 @@ async def kick(usr):
     if not user:
         return await usr.edit("`Couldn't fetch user.`")
 
-    await usr.edit("`Kicking...`")
+    await usr.edit("`Proses Tendang Jamet...`")
 
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
@@ -669,10 +669,10 @@ async def kick(usr):
 
     if reason:
         await usr.edit(
-            f"`TENDANG Si Jelek` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}"
+            f"`Keluarkan Si Jelek` [{user.first_name}](tg://user?id={user.id})`!`\nAlasan: {reason}"
         )
     else:
-        await usr.edit(f"`TENDANG Si Jelek` [{user.first_name}](tg://user?id={user.id})`!`")
+        await usr.edit(f"`Keluarkan Si Jelek` [{user.first_name}](tg://user?id={user.id})`!`")
         await sleep(5)
         await usr.delete()
 
@@ -680,8 +680,8 @@ async def kick(usr):
         await usr.client.send_message(
             BOTLOG_CHATID,
             "#KICK\n"
-            f"USER: [{user.first_name}](tg://user?id={user.id})\n"
-            f"CHAT: {usr.chat.title}(`{usr.chat_id}`)\n",
+            f"Jamet: [{user.first_name}](tg://user?id={user.id})\n"
+            f"Chat: {usr.chat.title}(`{usr.chat_id}`)\n",
         )
 
 
@@ -689,7 +689,7 @@ async def kick(usr):
 async def get_users(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
-    mentions = "Users in {}: \n".format(title)
+    mentions = "Gabut People's {}: \n".format(title)
     try:
         if not show.pattern_match.group(1):
             async for user in show.client.iter_participants(show.chat_id):
@@ -698,7 +698,7 @@ async def get_users(show):
                         f"\n[{user.first_name}](tg://user?id={user.id}) `{user.id}`"
                     )
                 else:
-                    mentions += f"\nDeleted Account `{user.id}`"
+                    mentions += f"\nAkun Terhapus `{user.id}`"
         else:
             searchq = show.pattern_match.group(1)
             async for user in show.client.iter_participants(
@@ -709,13 +709,13 @@ async def get_users(show):
                         f"\n[{user.first_name}](tg://user?id={user.id}) `{user.id}`"
                     )
                 else:
-                    mentions += f"\nDeleted Account `{user.id}`"
+                    mentions += f"\nAkun Terhapus `{user.id}`"
     except ChatAdminRequiredError as err:
         mentions += " " + str(err) + "\n"
     try:
         await show.edit(mentions)
     except MessageTooLongError:
-        await show.edit("Damn, this is a huge group. Uploading users lists as file.")
+        await show.edit("Damn, Lagi Proses. Proses upload list gabut people's.")
         file = open("userslist.txt", "w+")
         file.write(mentions)
         file.close()
