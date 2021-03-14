@@ -725,18 +725,18 @@ SLAP_TEMPLATES_Jutsu = [
 ]
 
 ITEMS_Jutsu = [
-    "KAA MEE HAA MEE HAA",
-    "Chibaku Tensei",
+    "IKEH KEE IKEH KEE HAA",
+    "Kimochi Tensei",
 ]
 
 THROW_Jutsu = [
-    "Futon Rasen Shuriken",
-    "Chidorii kontoll",
+    "Cruton Rasen Shuriken",
+    "Chidori In Pussy",
 ]
 
 HIT_Jutsu = [
     "CROTTT NO JUTSUU",
-    "KEKUATAN PELER",
+    "AHH MANTABBB",
 ]
 
 GAMBAR_TITIT = """
@@ -1575,7 +1575,7 @@ async def gey(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`\n┈┈┈╭━━━━━╮┈┈┈┈┈\n┈┈┈┃┊┊┊┊┊┃┈┈┈┈┈`"
                      "`\n┈┈┈┃┊┊╭━╮┻╮┈┈┈┈\n┈┈┈╱╲┊┃▋┃▋┃┈┈┈┈\n┈┈╭┻┊┊╰━┻━╮┈┈┈┈`"
-                     "`\n┈┈╰┳┊╭━━━┳╯┈┈┈┈\n┈┈┈┃┊┃╰━━┫┈NIGGA U GEY`"
+                     "`\n┈┈╰┳┊╭━━━┳╯┈┈┈┈\n┈┈┈┃┊┃╰━━┫┈ELUU GAY`"
                      "\n┈┈┈┈┈┈┏━┓┈┈┈┈┈┈")
 
 
