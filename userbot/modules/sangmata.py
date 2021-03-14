@@ -17,16 +17,16 @@ async def lastname(steal):
     if steal.fwd_from:
         return
     if not steal.reply_to_msg_id:
-        await steal.edit("```Mohon Balas Ke Pesan Pengguna Tololl.```")
+        await steal.edit("```Reply Pesannya Pantek.```")
         return
     message = await steal.get_reply_message()
     chat = "@SangMataInfo_bot"
     user_id = message.sender.id
     id = f"/search_id {user_id}"
     if message.sender.bot:
-        await steal.edit("```Balas Ke Pesan Pengguna Yang Ngentott.```")
+        await steal.edit("```Reply Pesannya Pantek.```")
         return
-    await steal.edit("```Lu Siapa Si Ngentot? Intip Sikit Boleh Ya Cayank 🐨```")
+    await steal.edit("```Hemm, Lu Siapa Si? Cek Dulu Lah Asuu```")
     try:
         async with bot.conversation(chat) as conv:
             try:
@@ -35,7 +35,7 @@ async def lastname(steal):
                 response = await conv.get_response()
             except YouBlockedUserError:
                 await steal.reply(
-                    "```Unblock @sangmatainfo_bot Tolol...```"
+                    "```Unblock @sangmatainfo_bot Dulu Asuu...```"
                 )
                 return
             if r.text.startswith("Name"):
@@ -48,7 +48,7 @@ async def lastname(steal):
             if response.text.startswith("No records") or r.text.startswith(
                 "No records"
             ):
-                await steal.edit("```Saya Tidak Menemukan Informasi Pergantian Nama, Gaperna Ganti Nama Ni Orang ツ```")
+                await steal.edit("```Gua Tidak Menemukan Informasi Apapun Soal Si Jelek Ini ツ```")
                 await steal.client.delete_messages(
                     conv.chat_id, [msg.id, r.id, response.id]
                 )
