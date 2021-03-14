@@ -26,7 +26,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**ANGKASA BAWA BOTOL**")
     sleep(3)
-    await typew.edit("`KALIAN SEMUA PANTEK PEOPLE!!!`")
+    await typew.edit("`KALIAN SEMUA JAMET TOLOL!!!`")
 # Owner @Si_Dian
 
 
