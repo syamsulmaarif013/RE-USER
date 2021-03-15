@@ -35,9 +35,9 @@ async def help(event):
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
-            string += "`\t✬"
+            string += "`\tΦ"
         await event.reply(f"•{string}•"
-                          "\nJANGAN TYPO TOLOL....")
+                          "\nJANGAN TYPO ASUUU....")
         await event.reply(f"\n**Ketik Contoh** `.help afk` **Untuk Informasi Module**")
         await asyncio.sleep(1000)
         await event.delete()
