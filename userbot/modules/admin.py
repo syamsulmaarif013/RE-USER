@@ -380,12 +380,12 @@ async def unmoot(unmot):
         return
 
     if unmute(unmot.chat_id, user.id) is False:
-        return await unmot.edit("`Error! User probably already unmuted.`")
+        return await unmot.edit("`Anjeng! Dia Sudah Di Unmute Asu...`")
     else:
 
         try:
             await unmot.client(EditBannedRequest(unmot.chat_id, user.id, UNBAN_RIGHTS))
-            await unmot.edit("```Jangan Caper Lagi Asuu```")
+            await unmot.edit("```Jangan Caper Lagi Asuu!```")
             await sleep(3)
             await unmot.delete()
         except UserIdInvalidError:
@@ -457,10 +457,10 @@ async def ungmoot(un_gmute):
     await un_gmute.edit("```Sabar Asuuu...```")
 
     if ungmute(user.id) is False:
-        await un_gmute.edit("`Error! User probably not gmuted.`")
+        await un_gmute.edit("`Anjeng! Dia Bukan List Gmute Lu Asu!`")
     else:
         # Inform about success
-        await un_gmute.edit("```Jangan Caper lagi Lu Pantek```")
+        await un_gmute.edit("```Jangan Caper lagi Lu Anjeng```")
         await sleep(3)
         await un_gmute.delete()
 
@@ -542,7 +542,7 @@ async def rm_deletedacc(show):
     if not admin and not creator:
         return await show.edit("`I am not an admin here!`")
 
-    await show.edit("`Menghapus Akun Terhapus...\nOh Gua Bisa Lakuin Itu?!?!`")
+    await show.edit("`Menghapus Akun Terhapus...\nOh Kesukaan Gua Itu Anjeng...`")
     del_u = 0
     del_a = 0
 
@@ -566,7 +566,7 @@ async def rm_deletedacc(show):
     if del_a > 0:
         del_status = (
             f"Membersihkan **{del_u}** akun terhapus(s) "
-            f"\n**{del_a}** akun admim terhapus tidak terbersihkam"
+            f"\n**{del_a}** akun admim terhapus tidak terbersihkan"
         )
     await show.edit(del_status)
     await sleep(2)
@@ -585,7 +585,7 @@ async def rm_deletedacc(show):
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
-    mentions = f"<b>💩Pantek's People💩 Di {title}:</b> \n"
+    mentions = f"<b>👾 🄿🄰🄽🅃🄴🄺'🅂 🄿🄴🄾🄿🄻🄴 🄳🄸 {title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
