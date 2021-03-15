@@ -43,12 +43,12 @@ async def _(event):
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
         query = event.pattern_match.group(1)
-        await event.edit("`Nyari lagu bentar kontol....`")
+        await event.edit("`Sabar Asu! Nyari lagu dulu....`")
     elif reply.message:
         query = reply.message
-        await event.edit("`Nyari lagu bentar kontol....`")
+        await event.edit("`Sabar Asu! Nyari lagu dulu....`")
     else:
-        await event.edit("`Ada yg bisa saya kentod?`")
+        await event.edit("`Ada yg bisa saya banting?`")
         return
 
     getmusic(str(query), "320k")
@@ -61,7 +61,7 @@ async def _(event):
         if any(fn_img.endswith(ext_img) for ext_img in img_extensions)
     ]
     thumb_image = img_filenames[0]
-    await event.edit("`Gii aplod bentar asuuuu....`")
+    await event.edit("`Lagi Upload! Sabar Kimak....`")
     c_time = time.time()
     await event.client.send_file(
         event.chat_id,
@@ -169,12 +169,12 @@ async def _(event):
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
         query = event.pattern_match.group(1)
-        await event.edit("`Cebentar agii nyari music nya kentod`")
+        await event.edit("`Tunggu! Lagi Nyari Lagunya`")
     elif reply.message:
         query = reply.message
-        await event.edit("`Music ditemukan , bentar agi aplod njeng`")
+        await event.edit("`Lagu Ditemukan. Sabar! Lagi Upload`")
     else:
-        await event.edit("`Apa yang harus w kentod? `")
+        await event.edit("`Apa yang harus gua banting? `")
         return
 
     await getmusic(str(query))
@@ -193,7 +193,7 @@ async def _(event):
         if any(fn_img.endswith(ext_img) for ext_img in img_extensions)
     ]
     thumb_image = img_filenames[0]
-    await event.edit("`Aplod berhasil nicchh`")
+    await event.edit("`Telah Berhasil Upload Anjeng`")
     c_time = time.time()
     await event.client.send_file(
         event.chat_id,
@@ -235,7 +235,7 @@ async def _(event):
     try:
         async with bot.conversation(chat) as conv:
             await asyncio.sleep(2)
-            await event.edit("`Lage aploddd.... bentar njing`")
+            await event.edit("`Lagi Upload.... Sabar anjeng`")
             try:
                 msg = await conv.send_message(link)
                 response = await conv.get_response()
@@ -244,7 +244,7 @@ async def _(event):
             except YouBlockedUserError:
                 await event.reply("`Mohon Unblock @WooMaiBot Dan Coba Lagi`")
                 return
-            await event.edit("`nih musik nyaa tololl.....`")
+            await event.edit("`Musiknya Nih! Selamat Bergabut Riaaa.....`")
             await asyncio.sleep(3)
             await bot.send_file(event.chat_id, respond)
         await event.client.delete_messages(
@@ -268,16 +268,16 @@ async def _(event):
         await event.edit("`Bentar yaa asuu , agii nyari bokep neh....`")
     elif reply.message:
         query = reply.message
-        await event.edit("`Sabar kontol , orang sabar di sayang Koala....`")
+        await event.edit("`Sabar Kimak , orang sabar boolnya lebar....`")
     else:
-        await event.edit("`Apa yang ku kentod nich?`")
+        await event.edit("`Apa yang gua banting?`")
         return
     getmusicvideo(query)
     l = glob.glob(("*.mp4")) + glob.glob(("*.mkv")) + glob.glob(("*.webm"))
     if l:
-        await event.edit("`Naaaah , ni njingg...`")
+        await event.edit("`Berhasil , Selamat Bergabut Ria...`")
     else:
-        await event.edit(f"cuihh , takde ape² pun `{query}`")
+        await event.edit(f"Cih, Tidak Menemukan Apapun `{query}`")
     loa = l[0]
     metadata = extractMetadata(createParser(loa))
     duration = 0
@@ -289,7 +289,7 @@ async def _(event):
         width = metadata.get("width")
     if metadata.has("height"):
         height = metadata.get("height")
-    await event.edit("`Agii aplod vidio, bentar ngape su..`")
+    await event.edit("`Proses Upload Video, Sabar Pantekkk..`")
     os.system("cp *mp4 thumb.mp4")
     os.system("ffmpeg -i thumb.mp4 -vframes 1 -an -s 480x360 -ss 5 thumb.jpg")
     thumb_image = "thumb.jpg"
