@@ -57,7 +57,7 @@
 
 * DENGAN HEROKU:
 <p align="center">
-   <a href = "https://heroku.com/deploy?template=https://github.com/AngkasaBoy/Space-Bot/tree/Kampang"><img src="https://telegra.ph/file/6fe096a495c6d2bc58173.jpg" alt="Press to Takeoff" width="490px"></a>
+   <a href = "https://heroku.com/deploy?template=https://github.com/AngkasaBoy/Space-Bot/tree/Kampang"><img src="https://telegra.ph/file/04bff83ac45be821eb4a7.jpg" alt="Press to Takeoff" width="490px"></a>
 </p>
 <br>
 
