@@ -23,10 +23,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    "`۩🄰🄵🄺! \n۩ʟᴀɢɪ sɪʙᴜᴋ ᴅᴜʟᴜ ʙʀᴏ...!`",
-    "`۩🄰🄵🄺! \n۩ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ᴀᴘᴀʟᴀɢɪ ɢᴀɴɢɢᴜ!",
-    "`۩🄰🄵🄺! \n۩ʟᴀɢɪ ᴏғғ! \n۩ᴊᴀɴɢᴀɴ ᴋᴀɴɢᴇɴ ᴅᴜʟᴜ!!!`",
-    "`۩🄰🄵🄺! \n۩ʟᴀɢɪ sɪʙᴜᴋ! \n۩ᴅɪʟᴀʀᴀɴɢ ᴜɴᴛᴜᴋ ʀɪɴᴅᴜ!!`",
+    "`۩🄰🄵🄺! \n ۩ʟᴀɢɪ sɪʙᴜᴋ ᴅᴜʟᴜ ʙʀᴏ...!`",
+    "`۩🄰🄵🄺! \n ۩ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ᴀᴘᴀʟᴀɢɪ ɢᴀɴɢɢᴜ!",
+    "`۩🄰🄵🄺! \n ۩ʟᴀɢɪ ᴏғғ! \n ۩ᴊᴀɴɢᴀɴ ᴋᴀɴɢᴇɴ ᴅᴜʟᴜ!!!`",
+    "`۩🄰🄵🄺! \n ۩ʟᴀɢɪ sɪʙᴜᴋ! \n ۩ᴅɪʟᴀʀᴀɴɢ ᴜɴᴛᴜᴋ ʀɪɴᴅᴜ!!`",
 ]
 
 
@@ -165,7 +165,7 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ʟᴀɢɪ ᴀғᴋ {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
+                    await mention.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣ʟᴀɢɪ ᴀғᴋ {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
                         \n⛣ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
@@ -174,7 +174,7 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"↪ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ↪ʟᴀɢɪ ᴀғᴋ {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
+                        await mention.reply(f"↪ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣ʟᴀɢɪ ᴀғᴋ {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
                             \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
@@ -242,7 +242,7 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)}s`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ⛣ʟᴀɢɪ ᴀғᴋ {afk_since}ʏᴀɴɢ ʟᴀʟᴜ.\
+                    await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣ʟᴀɢɪ ᴀғᴋ {afk_since}ʏᴀɴɢ ʟᴀʟᴜ.\
                         \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
@@ -251,7 +251,7 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ!⛣ʟᴀɢɪ ᴀғᴋ... {afk_since}ʏᴀɴɢ ʟᴀʟᴜ.\
+                        await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣⛣ʟᴀɢɪ ᴀғᴋ... {afk_since}ʏᴀɴɢ ʟᴀʟᴜ.\
                             \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
