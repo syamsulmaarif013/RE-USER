@@ -165,7 +165,7 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n↪ʟᴀɢɪ ᴀғᴋ! {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
+                    await mention.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ʟᴀɢɪ ᴀғᴋ {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
                         \n⛣ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
@@ -174,7 +174,7 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"↪ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n↪ʟᴀɢɪ ᴀғᴋ! {afk_since}ʏᴀɴɢ ʟᴀʟᴜ.\
+                        await mention.reply(f"↪ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! ↪ʟᴀɢɪ ᴀғᴋ {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
                             \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
