@@ -228,7 +228,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Whacking the pest!`")
+    await bon.edit("`Terghosting Kau Anjeng!`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
@@ -241,7 +241,7 @@ async def ban(bon):
             await reply.delete()
     except BadRequestError:
         return await bon.edit(
-            "`I dont have message nuking rights! But still he was banned!`"
+            "`SI ANJENG SUDAH DI BAN TOLOL!`"
         )
     # Delete message and then tell that the command
     # is done gracefully
@@ -332,16 +332,16 @@ async def spider(spdr):
     # If everything goes well, do announcing and mute
     await spdr.edit("`Gets a tape!`")
     if mute(spdr.chat_id, user.id) is False:
-        return await spdr.edit("`Error! User probably already muted.`")
+        return await spdr.edit("`Error! Si Anjeng Sudah Di Mute.`")
     else:
         try:
             await spdr.client(EditBannedRequest(spdr.chat_id, user.id, MUTE_RIGHTS))
 
             # Announce that the function is done
             if reason:
-                await spdr.edit(f"`DIAM Kau Pantek !!`\nReason: {reason}")
+                await spdr.edit(f"`DIAM Lu Jelek!!`\nReason: {reason}")
             else:
-                await spdr.edit("`DIAM Kau Pantek !!`")
+                await spdr.edit("`Diam! Caper Lu Jelek!!`")
 
             # Announce to logging group
             if BOTLOG:
@@ -460,7 +460,7 @@ async def ungmoot(un_gmute):
         await un_gmute.edit("`Anjeng! Dia Bukan List Gmute Lu Asu!`")
     else:
         # Inform about success
-        await un_gmute.edit("```Jangan Caper lagi Lu Anjeng```")
+        await un_gmute.edit("```Jangan Sok Keras Lagi Ya Asu!```")
         await sleep(3)
         await un_gmute.delete()
 
@@ -495,14 +495,14 @@ async def gspider(gspdr):
         return
 
     # If pass, inform and start gmuting
-    await gspdr.edit("`Grabs a huge, sticky duct tape!`")
+    await gspdr.edit("`HAH ANJENG! BERSIAP UNTUK DIAM!`")
     if gmute(user.id) is False:
         await gspdr.edit("`Error! User probably already gmuted.\nRe-rolls the tape.`")
     else:
         if reason:
             await gspdr.edit(f"`Diam Lu Jelek!`\nReason: {reason}")
         else:
-            await gspdr.edit("`Diam Lu Jelek!`")
+            await gspdr.edit("`DIAM! Caper Lu Jelek!`")
 
         if BOTLOG:
             await gspdr.client.send_message(
@@ -542,7 +542,7 @@ async def rm_deletedacc(show):
     if not admin and not creator:
         return await show.edit("`I am not an admin here!`")
 
-    await show.edit("`Menghapus Akun Terhapus...\nOh Kesukaan Gua Itu Anjeng...`")
+    await show.edit("`Menghapus Akun Depresi?\nOh Kesukaan Gua Itu Anjeng...`")
     del_u = 0
     del_a = 0
 
@@ -553,7 +553,7 @@ async def rm_deletedacc(show):
                     EditBannedRequest(show.chat_id, user.id, BANNED_RIGHTS)
                 )
             except ChatAdminRequiredError:
-                return await show.edit("`I don't have ban rights in this group`")
+                return await show.edit("`Gua Gapunya Ijin Ban!`")
             except UserAdminInvalidError:
                 del_u -= 1
                 del_a += 1
@@ -561,12 +561,12 @@ async def rm_deletedacc(show):
             del_u += 1
 
     if del_u > 0:
-        del_status = f"Membersihkan **{del_u}** akun terhapus(s)"
+        del_status = f"Membersihkan **{del_u}** akun depresi(s)"
 
     if del_a > 0:
         del_status = (
-            f"Membersihkan **{del_u}** akun terhapus(s) "
-            f"\n**{del_a}** akun admim terhapus tidak terbersihkan"
+            f"Membersihkan **{del_u}** akun depresi(s) "
+            f"\n**{del_a}** akun admin depresi tidak terbersihkan"
         )
     await show.edit(del_status)
     await sleep(2)
