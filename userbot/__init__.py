@@ -318,7 +318,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🚀BOT SPACE🚀\nTELAH DIAKTIFKAN```")
+    await bot.send_message(BOTLOG_CHATID, "```SPACE-BOT 🚀\nTELAH DIAKTIFKAN```")
     return
 
 with bot:
@@ -402,8 +402,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With .help Command",
-                    text="{}\nTotal loaded Modules: {}\n               \n🚀 **MODULE INFO SPACE-BOT** 🚀\n".format(
-                        "🚀BOT SPACE🚀 modules helper",
+                    text="{}\nTotal loaded Modules: {}\n               \n🚀 **MODULE INFO SPACE-BOT** \n".format(
+                        "🚀 SPACE-BOT modules helper",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -411,7 +411,7 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "🚀BOT SPACE🚀 Helper",
+                    "🚀 SPACE-BOT Helper",
                     text="List of Modules",
                     buttons=[],
                     link_preview=True)
