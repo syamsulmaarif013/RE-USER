@@ -150,7 +150,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default profile bio.",
-      "value": "ISI BIO LU TOLOL",
+      "value": "SPACE-BOT",
       "required": false
     },
     "ALIVE_NAME": {
@@ -163,7 +163,7 @@
     },
     "G_BAN_LOGGER_GROUP": {
       "description": "Add all sudo bots in your group and type id of that group.",
-      "value": "isi id group lu tolol",
+      "value": "ISI ID GRUP",
       "required": false
     },
     "G_DRIVE_DATA": {
