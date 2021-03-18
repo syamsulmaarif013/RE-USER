@@ -276,7 +276,7 @@ async def type_afk_is_not_true(notafk):
 
 CMD_HELP.update(
     {
-        "afk": ">`.off [Optional Reason]`"
+        "offgan": ">`.off [Optional Reason]`"
         "\nUsage: Sets you as off.\nReplies to anyone who tags/PM's "
         "you telling them that you are OFF(reason)."
         "\n\n>`.unoff`"
