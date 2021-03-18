@@ -55,7 +55,7 @@ async def pingme(pong):
                     f"\n ⫸ ᴱᴷˢᴱᴷᵁᵀᴼᴿ『`{ALIVE_NAME}`』 \n" % (duration))
 
 
-@register(outgoing=True, pattern='^kntl(?: |$)(.*)')
+@register(outgoing=True, pattern='^\.kntl(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -67,7 +67,7 @@ async def typewriter(typew):
 # Owner @Si_Dian
 
 
-@register(outgoing=True, pattern='^G(?: |$)(.*)')
+@register(outgoing=True, pattern='^\.G(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -87,7 +87,7 @@ async def typewriter(typew):
 # Owner @mixiologist
 
 
-@register(outgoing=True, pattern='^P(?: |$)(.*)')
+@register(outgoing=True, pattern='^\.P(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
