@@ -4,32 +4,32 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^.sadboy(?: |$)(.*)")
+@register(outgoing=True, pattern="^.sdby(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
-    await typew.edit("`Pertama-tama kamu cantik`")
+    await typew.edit("`Pertama-tama lu itu cantik`")
     sleep(2)
-    await typew.edit("`Kedua kamu manis`")
+    await typew.edit("`Kedua lu manis`")
     sleep(1)
-    await typew.edit("`Dan yang terakhir adalah kamu bukan jodohku`")
+    await typew.edit("`Dan yang terakhir adalah lu tukang ghosting`")
 
 
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern="^.lord(?: |$)(.*)")
+@register(outgoing=True, pattern="^.asw(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "`HALLO ASW AKU ADALAH BOT, DAN AKU AKAN SELALU MEMBANTU MU UNTUK BERSENANG-SENANG DI DUNIA TELEGRAM`"
+        "`HALLO TOLOL LU PASTI GABUT KAN? MAIN AMA GUA AJA KONTOL GUA BANTU BIAR GA GABUT `"
     )
     sleep(2)
     await typew.edit(
         "`\n█████████`"
         "`\n█▄█████▄█`"
         "`\n█▼▼▼▼▼`"
-        "`\n█    WOAAARGHH AASSWW`"
+        "`\n█    WOAARRGHH ASUUU`"
         "`\n█▲▲▲▲▲`"
         "`\n█████████`"
         "`\n ██   ██`"
@@ -38,12 +38,12 @@ async def typewriter(typew):
     await typew.edit(
         "`\n┈┈┈╭━━━━━╮┈┈┈┈┈\n┈┈┈┃┊┊┊┊┊┃┈┈┈┈┈`"
         "`\n┈┈┈┃┊┊╭━╮┻╮┈┈┈┈\n┈┈┈╱╲┊┃▋┃▋┃┈┈┈┈\n┈┈╭┻┊┊╰━┻━╮┈┈┈┈`"
-        "`\n┈┈╰┳┊╭━━━┳╯┈┈┈┈\n┈┈┈┃┊┃╰━━┫┈Yo Bro`"
+        "`\n┈┈╰┳┊╭━━━┳╯┈┈┈┈\n┈┈┈┃┊┃╰━━┫┈Wazzap Bro`"
         "\n┈┈┈┈┈┈┏━┓┈┈┈┈┈┈"
     )
     sleep(1)
     await typew.edit(
-        "\n┈┈┈╱▔▔▔▔╲┈╭━━━━━\n┈┈▕▂▂▂▂▂▂▏┃LUV U┊👑`"
+        "\n┈┈┈╱▔▔▔▔╲┈╭━━━━━\n┈┈▕▂▂▂▂▂▂▏┃LOP U┊👑`"
         "`\n┈┈▕▔▇▔▔┳▔▏╰┳╮LORD┊\n┈┈▕╭━╰╯━╮▏━╯╰━━━\n╱▔▔▏▅▅▅▅▕▔▔╲┈┈┈┈`"
         "`\n▏┈┈╲▂▂▂▂╱┈┈┈▏┈┈┈`"
     )
@@ -84,7 +84,7 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Aku Nyimak Ajalah**"
+        "\n**🄽🅈🄸🄼🄰🄺 🄿🄰🅁🄰 🅂🄴🄽🄸🄾🅁**"
     )
 
 
@@ -99,7 +99,7 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Punten**"
+        "\n**🄿🅄🄽🅃🄴🄽 🄶🄰🄴🅂**"
     )
 
 
@@ -114,7 +114,7 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Masih Ku Pantau**"
+        "\n**🄸🄽🅃🄸🄿 🅂🄸🄺🄸🅃 🄻🄰🄷**"
     )
 
 
@@ -122,14 +122,14 @@ async def typewriter(typew):
 
 CMD_HELP.update(
     {
-        "animasi2": "`.lord` ; `.lordalive` ; `.lordping`\
+        "animasi2": "`.asw`\
     \nUsage: bot.\
-    \n\n`.sadboy`\
+    \n\n`.sdby`\
     \nUsage: hiks\
-    \n\n`.punten` ; `.pantau`\
-    \nUsage: coba aja.\
-    \n\n`kosong`\
-    \nUsage: tunggu update selanjutnya.\
+    \n\n`.punten`\
+    \nUsage: kesopanan.\
+    \n\n`.pantau`\
+    \nUsage: nyimak senior.\
     \n\n`kosong`\
     \nUsage: tunggu update selanjutnya."
     }
