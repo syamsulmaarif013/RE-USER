@@ -44,5 +44,5 @@ CMD_HELP.update({
 \n\n`.io`\
 \nUsage: Hina Jamet.\
 \n\n`ui`\
-\nUsage: Hujat Orang.
+\nUsage: Hujat Orang."
 })
