@@ -39,7 +39,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 CMD_HELP.update({
-    "Hujatan":
+    "oi":
     "`.oi`\
 \nUsage: Ngatain Jamet.\
 \n\n`.io`\
