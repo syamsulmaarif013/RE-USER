@@ -69,7 +69,8 @@ async def vapor(vpr):
 
 
 @bot.on(admin_cmd(pattern="smallcaps(.*)", command="smallcaps (.*)"))
-@bot.on(sudo_cmd(pattern="smallcaps(.*)", command="smallcaps (.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="smallcaps(.*)",
+        command="smallcaps (.*)", allow_sudo=True))
 async def stylish_generator(event):
     args = event.pattern_match.group(1)
     if not args:
@@ -164,12 +165,15 @@ async def stylish_generator(event):
             littleboxtextcharacter = fonts.littleboxtextfont[
                 fonts.normaltext.index(normaltextcharacter)
             ]
-            string = string.replace(normaltextcharacter, littleboxtextcharacter)
+            string = string.replace(
+                normaltextcharacter,
+                littleboxtextcharacter)
     await edit_or_reply(event, string)
 
 
 @bot.on(admin_cmd(pattern="smothtext(.*)", command="smothtext (.*)"))
-@bot.on(sudo_cmd(pattern="smothtext(.*)", command="smothtext (.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="smothtext(.*)",
+        command="smothtext (.*)", allow_sudo=True))
 async def stylish_generator(event):
     args = event.pattern_match.group(1)
     if not args:

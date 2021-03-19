@@ -140,7 +140,8 @@ async def stylish_generator(event):
     string = "  ".join(args).lower()
     for normaltextcharacter in string:
         if normaltextcharacter in fonts.normaltext:
-            hwslcharacter = fonts.hwslfont[fonts.normaltext.index(normaltextcharacter)]
+            hwslcharacter = fonts.hwslfont[fonts.normaltext.index(
+                normaltextcharacter)]
             string = string.replace(normaltextcharacter, hwslcharacter)
     await edit_or_reply(event, string)
 

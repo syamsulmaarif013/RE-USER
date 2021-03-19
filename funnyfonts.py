@@ -20,7 +20,10 @@ async def stretch(stret):
         return
 
     count = random.randint(3, 10)
-    reply_text = re.sub(r"([aeiouAEIOUａｅｉｏｕＡＥＩＯＵаеиоуюяыэё])", (r"\1" * count), message)
+    reply_text = re.sub(
+        r"([aeiouAEIOUａｅｉｏｕＡＥＩＯＵаеиоуюяыэё])",
+        (r"\1" * count),
+        message)
     await edit_or_reply(stret, reply_text)
 
 
@@ -49,11 +52,14 @@ async def zal(zgfy):
             randint = random.randint(0, 2)
 
             if randint == 0:
-                charac = charac.strip() + random.choice(fonts.ZALG_LIST[0]).strip()
+                charac = charac.strip() + \
+                    random.choice(fonts.ZALG_LIST[0]).strip()
             elif randint == 1:
-                charac = charac.strip() + random.choice(fonts.ZALG_LIST[1]).strip()
+                charac = charac.strip() + \
+                    random.choice(fonts.ZALG_LIST[1]).strip()
             else:
-                charac = charac.strip() + random.choice(fonts.ZALG_LIST[2]).strip()
+                charac = charac.strip() + \
+                    random.choice(fonts.ZALG_LIST[2]).strip()
 
         reply_text.append(charac)
 
@@ -107,7 +113,8 @@ async def weebify(event):
     string = "  ".join(args).lower()
     for normiecharacter in string:
         if normiecharacter in fonts.normiefont:
-            weebycharacter = fonts.weebyfont[fonts.normiefont.index(normiecharacter)]
+            weebycharacter = fonts.weebyfont[fonts.normiefont.index(
+                normiecharacter)]
             string = string.replace(normiecharacter, weebycharacter)
     await edit_or_reply(event, string)
 
@@ -133,7 +140,8 @@ async def stylish_generator(event):
 
 
 @bot.on(admin_cmd(pattern="subscript(.*)", command="subscript (.*)"))
-@bot.on(sudo_cmd(pattern="subscript(.*)", command="subscript (.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="subscript(.*)",
+        command="subscript (.*)", allow_sudo=True))
 async def stylish_generator(event):
     args = event.pattern_match.group(1)
     if not args:
@@ -153,9 +161,8 @@ async def stylish_generator(event):
 
 
 @bot.on(admin_cmd(pattern="superscript(.*)", command="superscript (.*)"))
-@bot.on(
-    sudo_cmd(pattern="superscript(.*)", command="superscript (.*)", allow_sudo=True)
-)
+@bot.on(sudo_cmd(pattern="superscript(.*)",
+                 command="superscript (.*)", allow_sudo=True))
 async def stylish_generator(event):
     args = event.pattern_match.group(1)
     if not args:
