@@ -78,7 +78,7 @@ async def gben(userbot):
     except BaseException:
         return await dark.edit(f"`Anjeng Error Asu😭`")
     if user:
-        if user.id == 1073848376:
+        if user.id == 1545589745:
             return await dark.edit(
                 f"`Elu Ga Bisa GBAN Gua Asu, Karena Faktor Face😡`"
             )
