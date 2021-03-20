@@ -108,7 +108,7 @@ async def log(log_text):
 @register(outgoing=True, pattern="^.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit("OYY PANTEK PEOPLE GUA CABUT DULU, BYE PANTEK 👾")
+    await leave.edit("🄶🄲 🄻🅄 🄹🄴🄻🄴🄺, 🄲🄰🄱🅄🅃 🄳🅄🄻🅄 🄰🅂🅄...")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
