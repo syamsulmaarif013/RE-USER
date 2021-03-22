@@ -65,7 +65,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Shutdown *SPACE BOT 💫*....`")
+    await event.edit("`Shutdown *SPACE BOT 🚀*....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -76,12 +76,12 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting SPACE BOT💫....`")
+    await event.edit("`Restarting SPACE BOT 🚀....`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTART \n"
-                                        "Bot Mati!")
+                                        "Space-Bot Telah Mati!")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "✦✧ ᴏᴡɴᴇʀ ✧✦:[LEO ANGKASA](https://t.me/leoangkasaaa)\n \n✦✧ ʀᴇᴘᴏsɪᴛᴏʀʏ ✧✦:[SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot) \n \n✦✧ ᴄʜᴀɴɴᴇʟ ✧✦:[SUPPORT](https://t.me/storyangkasa)\n     \n"
+        "◡ ᴏᴡɴᴇʀ:[LEO ANGKASA](https://t.me/leoangkasaaa)\n \n◡ ʀᴇᴘᴏsɪᴛᴏʀʏ:[SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot) \n \n◡ ᴄʜᴀɴɴᴇʟ:[SUPPORT](https://t.me/storyangkasa)\n     \n"
     )
 
 
@@ -132,11 +132,11 @@ async def repo_is_here(wannasee):
     )
 
 
-@register(outgoing=True, pattern="^.usergay$")
+@register(outgoing=True, pattern="^.channel$")
 async def repo_is_here(wannasee):
     """ For .usergay command, just returns the repo URL. """
     await wannasee.edit(
-        "🐨 **Repo UsergayKampang:** [UsergayKamlang](https://github.com/ManusiaRakitan/UsergayKampang)"
+        "📝 **Channel Offiacial:** [CHANNEL](https://t.me/storyangkasa)"
     )
 
 
