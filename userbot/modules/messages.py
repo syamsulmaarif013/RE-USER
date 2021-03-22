@@ -28,18 +28,18 @@ async def fastpurger(purg):
                 await purg.client.delete_messages(chat, msgs)
                 msgs = []
     else:
-        return await purg.edit("`Balas di Pesan Goblokk!!.`")
+        return await purg.edit("`Reply Pesannya Tolol!.`")
 
     if msgs:
         await purg.client.delete_messages(chat, msgs)
     done = await purg.client.send_message(
-        purg.chat_id, f"`Berhasil Menghapus Kenangan!`\
-        \nSebanyak: {str(count)} Kenangan😭")
+        purg.chat_id, f"`Berhasil Melenyapkan Masa Lalu!`\
+        \nSebanyak: {str(count)} Masa Lalu!")
     """
     if BOTLOG:
         await purg.client.send_message(
             BOTLOG_CHATID,
-            "Kenangan sebanyak: " + str(count) + " berhasil di bersihkan.")
+            "Jumlah Masa Lalu: " + str(count) + " berhasil lenyap.")
     """
     await sleep(2)
     await done.delete()
@@ -59,13 +59,13 @@ async def purgeme(delme):
 
     smsg = await delme.client.send_message(
         delme.chat_id,
-        "`Menghapus Kenangan!` Sebanyak " + str(count) + " Sukses.",
+        "`Menghilangkan masa lalu!` Sebanyak " + str(count) + " Berhasil.",
     )
     """
     if BOTLOG:
         await delme.client.send_message(
             BOTLOG_CHATID,
-            "Berhasil menghapus " + str(count) + " kenangan.....")
+            "Berhasil melenyapkan " + str(count) + " masa lalu.....")
     """
     await sleep(2)
     i = 1
