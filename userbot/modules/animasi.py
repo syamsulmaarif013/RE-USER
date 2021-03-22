@@ -83,7 +83,7 @@ async def typewriter(typew):
         "╬═╬ \n"
         "╬═╬ \n"
         "╬═╬ \n"
-        "╬═╬ HAI PANTEK'S :) \n"
+        "╬═╬ HALO JAMET :) \n"
         "╬═╬☻/ \n"
         "╬═╬/▌ \n"
         r"╬═╬/ \ \n"
@@ -102,7 +102,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "`Dadahh, Depresi Gua Gaisss...`          \n　　　　　|"
+        "`Dhlh, Depresi Gua...`          \n　　　　　|"
         "\n　　　　　| \n"
         "　　　　　| \n"
         "　　　　　| \n"
@@ -127,7 +127,7 @@ async def typewriter(typew):
         "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
         "▄▀──█▄▄──────█─█▄▄\n"
         "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
-        "─▀───────▀▀─▀───────▀▀\n`Kaboooorrrrrr..`"
+        "─▀───────▀▀─▀───────▀▀\n`Kaboorrr akwokwok..`"
     )
 
 
