@@ -36,16 +36,16 @@ async def _(event):
 
         animation_chars = [
 
-            "👁👁\n  👄  =====> Woy, Pantek People!",
+            "👁👁\n  👄  =====> Woy, Jamet Kontol!",
             "👁👁\n  👅  =====> Pakabar Anjeng?",
             "👁👁\n  💋  =====> Gabut Banget Lu Ya?",
             "👁👁\n  👄  =====> Makanya Ganteng Kontol",
             "👁👁\n  👅  =====> Pergi Dah Lu",
-            "👁👁\n  💋  =====> Dih, Gausa Ketawa Tolol",
+            "👁👁\n  💋  =====> Gausa Ketawa Tolol",
             "👁👁\n  👄  =====> Mulut Lu Bau Belerang Anjeng",
             "👁👁\n  👅  =====> Badan Lu bau Besi",
-            "👁👁\n  💋  =====> Muka Lu Kaya Karakter Game Pou",
-            "👁👁\n  👄  =====> Pergi Dah Tolol "
+            "👁👁\n  💋  =====> Muka Lu Kaya Pala Kontol",
+            "👁👁\n  👄  =====> Pergi Sono Lu Kontol... "
         ]
 
         for i in animation_ttl:
@@ -209,7 +209,7 @@ async def _(event):
             "------------------>",
             "------>;(^。^)ノ",
             "(￣ー￣) Mati",
-            "**Jamet Pantek Berhasil Terbunuh (°̥̥̥̥̥̥̥̥•̀.̫•́°̥̥̥̥̥̥̥)**",
+            "**Jamet Berhasil Terbunuh (°̥̥̥̥̥̥̥̥•̀.̫•́°̥̥̥̥̥̥̥)**",
         ]
 
         for i in animation_ttl:
@@ -467,7 +467,7 @@ async def _(event):
         await asyncio.sleep(0.5)
         await event.edit("Doyan Ngewe💦")
         await asyncio.sleep(0.5)
-        await event.edit("LGBT Pula💩")
+        await event.edit("Sange Ga Modal💩")
         await asyncio.sleep(0.5)
         await event.edit("Mati Aja Lu! ")
         await asyncio.sleep(0.5)
@@ -477,7 +477,7 @@ async def _(event):
         await asyncio.sleep(0.5)
         await event.edit("Makanya Cakep Kaya Gua")
         await asyncio.sleep(0.5)
-        await event.edit("DASAR KALIAN SEMUA PANTEK PEOPLE...💥")
+        await event.edit("DASAR KALIAN SEMUA JAMET KONTOLLL...💥")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -985,7 +985,7 @@ async def _(event):
 
         animation_chars = [
 
-            "**MENJADI PANTEK PEOPLE...**",
+            "**MENJADI JAMET KONTOL...**",
             "**Enabling All Permissions To User...**",
             "**(1) KONTOL GEDE: ☑️**",
             "**(1) KONTOL GEDE: ✅**",
@@ -1003,8 +1003,8 @@ async def _(event):
             "**(7) DASAR JAHANAM: ✅**",
             "**(8) MUKA LU JELEK ASU: ☑️**",
             "**(8) MUKA LU JELEK ASU: ✅**",
-            "**BERHASIL MENJADI PANTEK PEOPLE!**",
-            "**DASAR PANTEK PEOPLE ANJENG!!!**"
+            "**BERHASIL MENJADI JAMET TOLOL!**",
+            "**DASAR JAMET KONTOLLL...**"
 
         ]
 
@@ -2500,7 +2500,7 @@ async def _(event):
 
         return
 
-    await event.edit("Thinking... 🤔")
+    await event.edit("Mikir Dulu... 🤔")
 
     await asyncio.sleep(2)
 
