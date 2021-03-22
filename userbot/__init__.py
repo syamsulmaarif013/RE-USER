@@ -391,7 +391,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.reply("I'm [SPACE BOT](https://github.com/AngkasaBoy/Space-Bot) modules helper...\nplease make your own bot, don't use mine 😋")
             else:
-                await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
+                await event.reply(f"`Hey {ALIVE_NAME}\n\nGua Bekerja Untuk Lu :)`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -402,8 +402,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With .help Command",
-                    text="{}\nTotal loaded Modules: {}\n               \n🚀 **MODULE INFO SPACE-BOT** \n".format(
-                        "🚀 SPACE-BOT modules helper",
+                    text="{}\nTotal Semua Module: {}\n               \n **MODULE INFO SPACE-BOT** \n".format(
+                        "SPACE-BOT modules helper",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -411,7 +411,7 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "🚀 SPACE-BOT Helper",
+                    "SPACE-BOT Helper",
                     text="List of Modules",
                     buttons=[],
                     link_preview=True)
