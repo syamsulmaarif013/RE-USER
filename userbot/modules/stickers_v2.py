@@ -10,11 +10,11 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await event.edit("sir this is not a image message reply to image message")
+        await event.edit("Balas Pesan gambarnya anjeng")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("sir, This is not a image ")
+        await event.edit("Goblok, Ini Bukan Gambar ")
         return
     chat = "@buildstickerbot"
     await event.edit("Membuat Sticker..")
@@ -27,7 +27,7 @@ async def _(event):
             msg = await event.client.forward_messages(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await event.reply("unblock me (@buildstickerbot) and try again")
+            await event.reply("unblock (@buildstickerbot) asuuu...")
             return
         if response.text.startswith("Hi!"):
             await event.edit("Can you kindly disable your forward privacy settings for good?")
@@ -43,14 +43,14 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await event.edit("Balas di Sticker Goblok!!")
+        await event.edit("Balas di Sticker Goblok!")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("Balas di Sticker Tolol!!")
+        await event.edit("Balas di Sticker Tolol!")
         return
     chat = "@stickers_to_image_bot"
-    await event.edit("Convert to image..")
+    await event.edit("Lagi Proses Anjenggg..")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -60,7 +60,7 @@ async def _(event):
             msg = await event.client.forward_messages(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await event.reply("unblock me (@stickers_to_image_bot) to work")
+            await event.reply("unblock (@stickers_to_image_bot) goblok.")
             return
         if response.text.startswith("I understand only stickers"):
             await event.edit("Sorry i cant't convert it check wheter is non animated sticker or not")
@@ -92,10 +92,10 @@ async def sticker_to_png(sticker):
 
     img = await sticker.get_reply_message()
     if not img.document:
-        await sticker.edit("Ini Bukan sticker Goblok!!!...`")
+        await sticker.edit("Ini Bukan Stiker Anjenggg...`")
         return False
 
-    await sticker.edit("`Stiker Berhasil Di Colong!`")
+    await sticker.edit("`Stiker Berhasil Di Curi!`")
     image = io.BytesIO()
     await sticker.client.download_media(img, image)
     image.name = "sticker.png"
