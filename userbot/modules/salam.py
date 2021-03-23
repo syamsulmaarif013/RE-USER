@@ -96,8 +96,8 @@ async def typewriter(typew):
     await typew.edit(f"**STRAWBERRY MANGGA APEL**")
     sleep(3)
     await typew.edit("`SORRY GAK LEVEL!`")
-    
-    
+
+
 CMD_HELP.update({
     "salam":
     "`.P`\
