@@ -117,7 +117,6 @@ async def typewriter(typew):
         "\n**🄸🄽🅃🄸🄿 🅂🄸🄺🄸🅃 🄻🄰🄷**"
     )
 
-
 @register(outgoing=True, pattern="^.pantau(?: |$)(.*)")
 async def typewritter(typew):
     typew.pattern_match.group(1)
@@ -130,6 +129,8 @@ async def typewritter(typew):
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
         "\n**🄽🅈🄸🄼🄰🄺 🄿🄰🅁🄰 🅂🄴🄽🄸🄾🅁**"
+    )
+    
 # Create by myself @localheart
 
 CMD_HELP.update(
