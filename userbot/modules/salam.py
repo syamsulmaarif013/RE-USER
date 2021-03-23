@@ -89,6 +89,7 @@ async def typewriter(typew):
     await typew.edit("`SORRY GAK LEVEL!`")
 # Owner @leoangkasaaa
 
+
 @register(outgoing=True, pattern='^\\.W(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
