@@ -117,6 +117,7 @@ async def typewriter(typew):
         "\n**🄸🄽🅃🄸🄿 🅂🄸🄺🄸🅃 🄻🄰🄷**"
     )
 
+
 @register(outgoing=True, pattern="^.pantau(?: |$)(.*)")
 async def typewritter(typew):
     typew.pattern_match.group(1)
