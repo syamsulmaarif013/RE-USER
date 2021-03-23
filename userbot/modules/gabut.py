@@ -59,11 +59,11 @@ async def pingme(pong):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**WOY! PANTEK PEOPLE**")
+    await typew.edit(f"**WOY! JAMET KONTOLLL**")
     sleep(3)
     await typew.edit("`KERJAAN CAPER AJA TOLOL!!!`")
     sleep(3)
-    await typew.edit("`DASAR PANTEK LU KONTOL!!!`")
+    await typew.edit("`DASAR JAMET LU KONTOL!!!`")
 # Owner @Si_Dian
 
 
@@ -73,7 +73,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**SI ANGKASA BAWA BOTOL**")
     sleep(3)
-    await typew.edit("`KALIAN SEMUA PANTEK PEOPLE!!!`")
+    await typew.edit("`KALIAN SEMUA BOCAH TOLOLLL!!!`")
 # Owner @Si_Dian
 
 
@@ -91,7 +91,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**HALO PANTEK PEOPLE GUA {DEFAULTUSER}**")
+    await typew.edit(f"**HALO BABUUU! GUA {DEFAULTUSER}**")
     sleep(2)
     await typew.edit("`PUNTENNNNN.....`")
 # Owner @Si_Dian
