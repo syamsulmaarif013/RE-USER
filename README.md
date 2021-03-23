@@ -3,29 +3,29 @@
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
     <a href="https://travis-ci.com/ManusiaRakitan/Kampang-Bot.svg?branch=Kampang" /></a>
     <a href="https://app.codacy.com/gh/ManusiaRakitan/Kampang-Bot/dashboard"> <img src="https://img.shields.io/codacy/grade/a8f0747a964e4712818a28d2a7f4edd3?color=blue&logo=codacy&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/ManusiaRakitan/Kampang-Bot"> <img src="https://img.shields.io/github/repo-size/ManusiaRakitan/Kampang-Bot?logo=github&style=for-the-badge" /></a>
-    <a href="https://github.com/ManusiaRakitan/Kampang-Bot/network/members"> <img src="https://img.shields.io/github/forks/ManusiaRakitan/Kampang-Bot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/AngkasaBoy/Space-Bot"> <img src="https://img.shields.io/github/repo-size/AngkasaBoy/Space-Bot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/AngkasaBoy/Space-Bot/network/members"> <img src="https://img.shields.io/github/forks/AngkasaBoy/Space-Bot?logo=github&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=for-the-badge" /></a>
-    <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.8.6-blue?style=for-the-badge&logo=appveyor"/>
-    <a href="https://hub.docker.com/r/koala21/manusiarakitan"> <img src="https://img.shields.io/docker/image-size/koala21/manusiarakitan/kampang?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
-    <a href="https://hub.docker.com/r/koala21/manusiarakitan/kampang"> <img src="https://img.shields.io/docker/v/koala21/manusiarakitan/kampang?label=docker%20version&logo=docker&style=for-the-badge" /></a>
+    <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.2-blue?style=for-the-badge&logo=appveyor"/>
+    <a href="https://hub.docker.com/r/spacebot14/spaceman"> <img src="https://img.shields.io/docker/image-size/koala21/manusiarakitan/kampang?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
+    <a href="https://hub.docker.com/r/spacebot14/spaceman/space"> <img src="https://img.shields.io/docker/v/spacebot14/spaceman/space?label=docker%20version&logo=docker&style=for-the-badge" /></a>
    </p>
 
 
 <h3 align="center">A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database.</h3>
 <p align="center">&nbsp;</p>
 
-# Based on RaphielGang's [Telegram-Paperplane](https://github.com/RaphielGang/Telegram-Paperplane)
+# Based on Kampang-Bot [Kampang-Bot](https://github.com/ManusiaRakitan/Kampang-Bot)
 
-<h2 align="center"><b>CHANNEL OFFICIAL: <a href="https://telegram.dog/storyangkasa">CHANNEL🚀</a></b></h2>
+<h2 align="center"><b>CHANNEL OFFICIAL: <a href="https://telegram.dog/storyangkasa">OFFICIAL CHANNEL</a></b></h2>
 <br>
 <p align="center">
-   <a href="https://github.com/AngkasaBoy/Space-Bot"><img src="https://telegra.ph/file/9ff45dd6812f6ac179145.jpg" alt="SPACE-BOT" width=400px></a>
+   <a href="https://github.com/AngkasaBoy/Space-Bot"><img src="https://telegra.ph/file/6234955e1c69ce6488e1e.jpg" alt="SPACE-BOT" width=400px></a>
    <br>
    <br>
 </p>
 <h1>SPACE-BOT</h1>
-<b>BASE BOT FROM: <a href="https://github.com/ManusiaRakitan/Kampang-Bot">KAMPANG-BOT!</b>
+<b>OWNER REPO: <a href="https://t.me/leoangkasaaa">Leo Angkasa!</b>
 <br>
 <br>
     
