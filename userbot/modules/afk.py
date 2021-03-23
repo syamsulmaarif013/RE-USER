@@ -244,7 +244,7 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣{ALIVE_NAME}ʟᴀɢɪ ᴀғᴋ {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
-                        \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
+                        \n⛣ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
@@ -252,8 +252,8 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣⛣ʟᴀɢɪ ᴀғᴋ... {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
-                            \n↪ᴀʟᴀsᴀɴ: `{AFKREASON}`")
+                        await sender.reply(f"⛣ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ! \n⛣{ALIVE_NAME}ʟᴀɢɪ ᴀғᴋ... {afk_since} ʏᴀɴɢ ʟᴀʟᴜ.\
+                            \n⛣ᴀʟᴀsᴀɴ: `{AFKREASON}`")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
