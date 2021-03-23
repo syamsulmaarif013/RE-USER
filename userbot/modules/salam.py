@@ -104,7 +104,7 @@ CMD_HELP.update({
 \nUsage: Untuk Memberi Hujatan.\
 \n\n`.L`\
 \nUsage: Untuk Menjawab Salam.\"
-\n\n`.W`\
-\nUsage: Untuk Menolak Jamet.\"
+\n\n`.W`
+    \nUsage: Untuk Menolak Jamet.\"
 
 })
