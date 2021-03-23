@@ -84,7 +84,7 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**🄽🅈🄸🄼🄰🄺 🄿🄰🅁🄰 🅂🄴🄽🄸🄾🅁**"
+        "\n**PANTAUU JAMET**"
     )
 
 
@@ -103,7 +103,7 @@ async def typewriter(typew):
     )
 
 
-@register(outgoing=True, pattern="^.pantau(?: |$)(.*)")
+@register(outgoing=True, pattern="^.liat(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -117,7 +117,18 @@ async def typewriter(typew):
         "\n**🄸🄽🅃🄸🄿 🅂🄸🄺🄸🅃 🄻🄰🄷**"
     )
 
-
+@register(outgoing=True, pattern="^.pantau(?: |$)(.*)")
+async def typewritter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(
+        "`\n┻┳|―-∩`"
+        "`\n┳┻|     ヽ`"
+        "`\n┻┳|    ● |`"
+        "`\n┳┻|▼) _ノ`"
+        "`\n┻┳|￣  )`"
+        "`\n┳ﾐ(￣ ／`"
+        "`\n┻┳T￣|`"
+        "\n**🄽🅈🄸🄼🄰🄺 🄿🄰🅁🄰 🅂🄴🄽🄸🄾🅁**"
 # Create by myself @localheart
 
 CMD_HELP.update(
@@ -130,7 +141,7 @@ CMD_HELP.update(
     \nUsage: kesopanan.\
     \n\n`.pantau`\
     \nUsage: nyimak senior.\
-    \n\n`kosong`\
-    \nUsage: tunggu update selanjutnya."
+    \n\n`.liat`\
+    \nUsage: pantau jamet caper."
     }
 )
