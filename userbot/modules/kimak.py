@@ -90,7 +90,7 @@ async def _(event):
     await event.delete()
 
 
-@register(outgoing=True, pattern='^ .iban ?(.*)")
+@register(outgoing=True, pattern='^.iban ?(.*)')
 async def _(event):
     if event.fwd_from:
         return
