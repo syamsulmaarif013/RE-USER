@@ -80,10 +80,30 @@ async def typewriter(typew):
 # Owner @Si_Dian
 
 
+@register(outgoing=True, pattern='^\\.w(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**STRAWBERRY MANGGA APEL**")
+    sleep(3)
+    await typew.edit("`SORRY GAK LEVEL!`")
+
+
+@register(outgoing=True, pattern='^\\.W(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**STRAWBERRY MANGGA APEL**")
+    sleep(3)
+    await typew.edit("`SORRY GAK LEVEL!`")
+    
+    
 CMD_HELP.update({
     "salam":
     "`.P`\
 \nUsage: Untuk Memberi Hujatan.\
 \n\n`.L`\
-\nUsage: Untuk Menjawab Salam."
+\nUsage: Untuk Menjawab Salam.\
+\n\n`.`\
+\nUsage: Untuk Menolak Jamet.\"
 })
