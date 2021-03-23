@@ -107,5 +107,5 @@ CMD_HELP.update({
 \n\n`.L`\
 \nUsage: Untuk Menjawab Salam.\
 \n\n`.W`\
-\nUsage: Untuk Menolak Jamet.\"
+\nUsage: Untuk Menolak Jamet."
 })
