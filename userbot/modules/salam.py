@@ -12,11 +12,11 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**PANTEK ASU**")
+    await typew.edit(f"**JAMET KONTOLLL**")
     sleep(3)
-    await typew.edit("`PANTEK PANTEK PANTEK!!!`")
+    await typew.edit("`TOLOL TOLOL TOLOL!!!`")
     sleep(3)
-    await typew.edit("`DASAR MUKA JELEK!!!`")
+    await typew.edit("`CAPER AJA KONTOLLL!!!`")
 # Owner @Si_Dian
 
 
@@ -36,7 +36,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**ANGKASA BAWA BOTOL**")
     sleep(3)
-    await typew.edit("`KALIAN SEMUA PANTEK PEOPLE!!!`")
+    await typew.edit("`KALIAN SEMUA JAMET TOLOLLL!!!`")
 # Owner @Si_Dian
 
 
@@ -44,7 +44,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**HALO PANTEK PEOPLE GUA {DEFAULTUSER}**")
+    await typew.edit(f"**HALO BABUUU! GUA {DEFAULTUSER}**")
     sleep(2)
     await typew.edit("`PUNTENNNN.....`")
 # Owner @Si_Dian
@@ -54,7 +54,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**HALO PANTEK PEOPLE GUA {DEFAULTUSER}**")
+    await typew.edit(f"**HALO BABUUU! GUA {DEFAULTUSER}**")
     sleep(2)
     await typew.edit("`PUNTENNNN.....`")
 # Owner @Si_Dian
