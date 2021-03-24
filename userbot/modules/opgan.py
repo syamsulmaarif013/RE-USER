@@ -232,7 +232,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = not_afk.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.edit(f"**{ 🄱🄰🄻🄸🄺 🄽🄸🄲🄷, 🅁🄸🄽🄳🅄 🄶🅄🄰 🄶🄰?**")
+        msg = await notafk.edit(f"**{ALIVE_NAME} 🄱🄰🄻🄸🄺 🄽🄸🄲🄷, 🅁🄸🄽🄳🅄 🄶🅄🄰 🄶🄰?**")
         await asyncio.sleep(3)
         await msg.delete()
         if BOTLOG:
