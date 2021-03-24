@@ -21,6 +21,7 @@ from userbot import (  # noqa pylint: disable=unused-import isort:skip
     BOTLOG_CHATID,
     USERS,
     PM_AUTO_BAN,
+    ALIVE_NAME,
 )
 
 
@@ -75,7 +76,7 @@ async def mention_afk(mention):
         if mention.sender_id not in USERS or chat_title not in USERS:
             if AFKREASON:
                 await mention.reply(
-                    f"**ɢɪɪ ᴏғғ!.** (Since: {afk_str})"
+                    f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!.** (Since: {afk_str})"
                     f"\nᴀʟᴀꜱᴀɴ: `{AFKREASON}`."
                 )
             else:
@@ -91,12 +92,12 @@ async def mention_afk(mention):
             if USERS[mention.sender_id] % randint(2, 4) == 0:
                 if AFKREASON:
                     await mention.reply(
-                        f"**ɢɪɪ ᴏғғ!** (Since: {afk_str})"
+                        f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!** (Since: {afk_str})"
                         f"\nᴀʟᴀꜱᴀɴ: `{AFKREASON}`."
                     )
                 else:
                     await mention.reply(
-                        f"**ɢɪɪ ᴏғғ!** (Since: {afk_str})"
+                        f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!** (Since: {afk_str})"
                         "\n**ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ, ʙᴇʀᴀᴛ!**"
                     )
             if mention.sender_id is not None:
@@ -162,12 +163,12 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
-                        f"**ɢɪɪ ᴏғғ!** (Since: {afk_str})"
+                        f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!** (Since: {afk_str})"
                         f"\nᴀʟᴀꜱᴀɴ: `{AFKREASON}`."
                     )
                 else:
                     await sender.reply(
-                        f"**ɢɪɪ ᴏғғ!** (Since: {afk_str})"
+                        f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!** (Since: {afk_str})"
                         "\n**ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ, ʙᴇʀᴀᴛ!**"
                     )
                 USERS.update({sender.sender_id: 1})
@@ -176,12 +177,12 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
-                            "**ɢɪɪ ᴏғғ!** (Since: {afk_str})"
+                            f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!** (Since: {afk_str})"
                             f"\nᴀʟᴀꜱᴀɴ: `{AFKREASON}`."
                         )
                     else:
                         await sender.reply(
-                            "**ɢɪɪ ᴏғғ!** (Since: {afk_str})"
+                            f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!** (Since: {afk_str})"
                             "\n**ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ, ʙᴇʀᴀᴛ!**"
                         )
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
@@ -207,9 +208,9 @@ async def set_afk(afk_e):
     afk_start = start1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit("**ɢᴜᴀ ᴏғғ ᴅᴜʟᴜ!**" f"\nᴀʟᴀsᴀɴ: `{string}`")
+        await afk_e.edit(f"**{ALIVE_NAME} ɢᴜᴀ ᴏғғ ᴅᴜʟᴜ!**" f"\nᴀʟᴀsᴀɴ: `{string}`")
     else:
-        await afk_e.edit("**🄶🅄🄰 🄾🄵🄵! 🄹🄰🄽🄶🄰🄽 🅁🄸🄽🄳🅄 🄳🅄🄻🅄...!**")
+        await afk_e.edit(f"**{ALIVE_NAME} 🄶🅄🄰 🄾🄵🄵! 🄹🄰🄽🄶🄰🄽 🅁🄸🄽🄳🅄 🄳🅄🄻🅄...!**")
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGua Afk Dulu Mang!")
     ISAFK = True
@@ -231,7 +232,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = not_afk.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.edit("**🄶🅄🄰 🄱🄰🄻🄸🄺 🄽🄸🄲🄷, 🅁🄸🄽🄳🅄 🄶🅄🄰 🄶🄰?**")
+        msg = await notafk.edit(f"**{ 🄱🄰🄻🄸🄺 🄽🄸🄲🄷, 🅁🄸🄽🄳🅄 🄶🅄🄰 🄶🄰?**")
         await asyncio.sleep(3)
         await msg.delete()
         if BOTLOG:
