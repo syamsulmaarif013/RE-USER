@@ -21,7 +21,7 @@ async def get_full_user(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit("`Tanpa ID Gabisa Tolol!`")
+            await event.edit("`MAU GBAN SAPA SIH TOLOL!`")
             return
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
@@ -33,7 +33,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("`Wahh Ngebug Anjing... Mohon Lapor Ke Angkasa` @leoangkasaaa", str(err))
+            return await event.edit("`Error Asu... Mohon Lapor Ke Angkasa` @leoangkasaaa", str(err))
     return user_obj, extra
 
 
@@ -120,7 +120,7 @@ async def gunben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Proses Pengampunan Sedang Menyala`")
+        dark = await dc.reply(f"`Proses Pengampunan [{user.first_name}](tg://user?id={user.id}) Sedang Menyala`")
     else:
         dark = await dc.edit("` Pengampunan Hukuman Sedang Di Proses!`")
     me = await userbot.client.get_me()
@@ -145,7 +145,7 @@ async def gunben(userbot):
         return await dark.edit("`Syntax Eror Asu 🚫`")
     if user:
         if user.id == 1545589745:
-            return await dark.edit("**Gua Kebal GBAN Lu, Makanya Ganteng KONTOLL...**")
+            return await dark.edit("**Gua Kebal Dari GBAN Lu!**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
         except BaseException:
@@ -181,7 +181,7 @@ async def gunben(userbot):
 CMD_HELP.update({
     "gban": "\
 `.gban`\
-\nUsage: ✒ Melakukan Global Banned Untuk PANTEK PEOPLE Yang Meresahkan.\
+\nUsage: ✒ Melakukan  Global Banned.\
 \n\n`.ungban`\
-\nUsage: ✒ Mengampuni Pantek People Yang Jelek "
+\nUsage: ✒ Melakukan Pengampunan Dari Hukuman "
 })
