@@ -81,7 +81,7 @@ async def mention_afk(mention):
                 )
             else:
                 await mention.reply(
-                    f"**ɢɪɪ ᴏғғ!.** (Since: {afk_str})"
+                    f"**{ALIVE_NAME} ɢɪɪ ᴏғғ!.** (Since: {afk_str})"
                     "\n**ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ, ʙᴇʀᴀᴛ!**"
                 )
             if mention.sender_id is not None:
@@ -212,7 +212,7 @@ async def set_afk(afk_e):
     else:
         await afk_e.edit(f"**{ALIVE_NAME} 🄶🅄🄰 🄾🄵🄵! 🄹🄰🄽🄶🄰🄽 🅁🄸🄽🄳🅄 🄳🅄🄻🅄...!**")
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGua Afk Dulu Mang!")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGUA OFF DULU!")
     ISAFK = True
     afk_time = datetime.now()
     raise StopPropagation
