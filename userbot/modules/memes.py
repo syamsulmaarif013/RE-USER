@@ -541,13 +541,12 @@ CRI = [
 ]
 
 SLAP_TEMPLATES_EN = [
-    "{hits} {victim} with a {item}.",
-    "{hits} {victim} in the face with a {item}.",
-    "{hits} {victim} around a bit with a {item}.",
-    "`{throws} a {item} at {victim}.`",
-    "grabs a {item} and {throws} it at {victim}'s face.",
-    "{hits} a {item} at {victim}.", "{throws} a few {item} at {victim}.",
-    "grabs a {item} and {throws} it in {victim}'s face.",
+    "{hits} {victim} pakai sebuah {item}.",
+    "{hits} {victim} di wajah pakai {item}.",
+    "{hits} {victim} dengan sebuah {item}.",
+    "`{throws} {item} ke {victim}.`",
+    "tangkap {item} dan {throws} pada {victim} mukanya.",
+    "{hits} {item} ke {victim}.", "{throws} beberapa {item} ke {victim}.",
     "launches a {item} in {victim}'s general direction.",
     "sits on {victim}'s face while slamming a {item} {where}.",
     "starts slapping {victim} silly with a {item}.",
@@ -558,73 +557,53 @@ SLAP_TEMPLATES_EN = [
     "prods {victim} with a {item}.",
     "picks up a {item} and {hits} {victim} with it.",
     "`ties {victim} to a chair and {throws} a {item} at them.`",
-    "{hits} {victim} {where} with a {item}.",
+    "{hits} {victim} {where} pakai {item}.",
     "ties {victim} to a pole and whips them {where} with a {item}."
     "gave a friendly push to help {victim} learn to swim in lava.",
     "sent {victim} to /dev/null.", "sent {victim} down the memory hole.",
     "beheaded {victim}.", "threw {victim} off a building.",
-    "replaced all of {victim}'s music with Nickelback.",
-    "spammed {victim}'s email.", "made {victim} a knuckle sandwich.",
-    "slapped {victim} with pure nothing.",
-    "hit {victim} with a small, interstellar spaceship.",
-    "quickscoped {victim}.", "put {victim} in check-mate.",
-    "RSA-encrypted {victim} and deleted the private key.",
-    "put {victim} in the friendzone.",
-    "slaps {victim} with a DMCA takedown request!"
+    "tampar {victim} dengan sejuta kerinduan.",
+    "tempatkan {victim} pada zona pertemanan.",
 ]
 
 ITEMS_EN = [
-    "cast iron skillet",
-    "large trout",
-    "baseball bat",
-    "cricket bat",
-    "wooden cane",
-    "nail",
-    "printer",
-    "shovel",
-    "pair of trousers",
-    "CRT monitor",
-    "diamond sword",
-    "baguette",
-    "physics textbook",
-    "toaster",
-    "portrait of Richard Stallman",
-    "television",
-    "mau5head",
-    "five ton truck",
-    "roll of duct tape",
-    "book",
+    "panci",
+    "sandal jepit",
+    "tongkat baseball",
+    "sapu",
+    "kayu",
+    "batu",
+    "tongkat besi",
+    "tutup panci",
+    "batu bata",
+    "cangkul",
+    "pedang emas",
+    "bambu runcing",
+    "pistol",
+    "mie basi",
+    "vas bunga",
+    "televisi",
+    "sekop",
+    "truk 5 ton",
+    "kabel panjabg",
+    "buku",
     "laptop",
-    "old television",
-    "sack of rocks",
-    "rainbow trout",
-    "cobblestone block",
-    "lava bucket",
-    "rubber chicken",
-    "spiked bat",
-    "gold block",
-    "fire extinguisher",
-    "heavy rock",
-    "chunk of dirt",
-    "beehive",
-    "piece of rotten meat",
-    "bear",
-    "ton of bricks",
+    "radio",
+    "kancut bekas",
+    "sepatu safety",
 ]
 
 THROW_EN = [
-    "throws",
-    "flings",
-    "chucks",
-    "hurls",
+    "melemparkan",
+    "memukulkan",
+    "membuang",
 ]
 
 HIT_EN = [
-    "hits",
-    "whacks",
-    "slaps",
-    "smacks",
-    "bashes",
+    "memukul",
+    "mendera",
+    "menampar",
+    "menendang",
 ]
 
 WHERE_EN = ["in the chest", "on the head", "on the butt", "on the crotch"]
@@ -882,30 +861,30 @@ async def univsaye(cowmsg):
 
 @register(outgoing=True, pattern=r"^\.coinflip (.*)")
 async def coin(event):
-    r = choice(["heads", "tails"])
+    r = choice(["kepala", "buntut"])
     input_str = event.pattern_match.group(1)
     if input_str:
         input_str = input_str.lower()
-    if r == "heads":
-        if input_str == "heads":
+    if r == "kepala":
+        if input_str == "kepala":
             await event.edit(
-                "The coin landed on: **Heads**.\nYou were correct.")
-        elif input_str == "tails":
+                "Koin Jatuh Pada: **Kepala**.\nLu Benar.")
+        elif input_str == "buntut":
             await event.edit(
-                "The coin landed on: **Heads**.\nYou weren't correct, try again ..."
+                "Koin Jatuh Pada: **Kepala**.\nLu Salah, Coba Lagi ..."
             )
         else:
-            await event.edit("The coin landed on: **Heads**.")
-    elif r == "tails":
-        if input_str == "tails":
+            await event.edit("Koin Jatuh Pada: **Kepala**.")
+    elif r == "buntut":
+        if input_str == "buntut":
             await event.edit(
-                "The coin landed on: **Tails**.\nYou were correct.")
-        elif input_str == "heads":
+                "Koin Jatuh Pada: **Buntut**.\nLu Benar.")
+        elif input_str == "kepala":
             await event.edit(
-                "The coin landed on: **Tails**.\nYou weren't correct, try again ..."
+                "Koin Jatuh Pada: **Buntut**.\nLu Salah, Coba Lagi ..."
             )
         else:
-            await event.edit("The coin landed on: **Tails**.")
+            await event.edit("Koin Jatuh Pada: **Tails**.")
 
 
 @register(pattern=r"^\.slap(?: |$)(.*)", outgoing=True)
@@ -971,9 +950,9 @@ async def slap(replied_user, event):
 
 @register(outgoing=True, pattern=r"^\.boobs(?: |$)(.*)")
 async def boobs(e):
-    await e.edit("`Finding some big boobs...`")
+    await e.edit("`Hemm, Mencari Pantat Besar...`")
     await sleep(3)
-    await e.edit("`Sending some big boobs...`")
+    await e.edit("`Mengirim Pantat Besar...`")
     nsfw = requests.get('http://api.oboobs.ru/noise/1').json()[0]["preview"]
     urllib.request.urlretrieve(
         "http://media.oboobs.ru/{}".format(nsfw), "*.jpg")
@@ -983,11 +962,11 @@ async def boobs(e):
     await e.delete()
 
 
-@register(outgoing=True, pattern=r"^\.butts(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.pantat(?: |$)(.*)")
 async def butts(e):
-    await e.edit("`Finding some beautiful butts...`")
+    await e.edit("`Hemm, Mencari Pantat Indah...`")
     await sleep(3)
-    await e.edit("`Sending some beautiful butts...`")
+    await e.edit("`Mengirim Pantat Indah...`")
     nsfw = requests.get('http://api.obutts.ru/noise/1').json()[0]["preview"]
     urllib.request.urlretrieve(
         "http://media.obutts.ru/{}".format(nsfw), "*.jpg")
@@ -1544,18 +1523,18 @@ async def gtfo(e):
         await e.edit("`\n█████████`"
                      "`\n█▄█████▄█`"
                      "`\n█▼▼▼▼▼`"
-                     "`\n█       STFU FAGGOT'S`"
+                     "`\n█     BUAHAHAHAHA`"
                      "`\n█▲▲▲▲▲`"
                      "`\n█████████`"
                      "`\n ██   ██`")
 
 
-@register(outgoing=True, pattern=r"^\.taco$")
+@register(outgoing=True, pattern=r"^\.tai$")
 async def taco(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("\n{\\__/}"
                      "\n(●_●)"
-                     "\n( >🌮 Want a tai?")
+                     "\n( >💩 Mau Tai?")
 
 
 @register(outgoing=True, pattern=r"^\.paw$")
@@ -1653,7 +1632,7 @@ async def koc(e):
         await e.edit("8===✊D")
         await e.edit("8===✊D💦")
         await e.edit("8====D💦💦")
-        await e.edit("crooottssssssss")
+        await e.edit("croottss ahh mantab")
         await e.edit(choice(FACEREACTS))
 
 
@@ -1762,7 +1741,7 @@ CMD_HELP.update({
     "\nUsage: Praise people!"
     "\n\n>`.boobs`"
         "\nUsage: Get b00bs imej"
-        "\n\n>`.butts`"
+        "\n\n>`.pantat`"
         "\nUsage: Get 🅱️utts imej"
     "\n\n>`.f <emoji/character>`"
     "\nUsage: Pay Respects."
@@ -1780,7 +1759,7 @@ CMD_HELP.update({
     "\n[Available Actions: (typing, contact, game, location, voice, round, video, photo, document, cancel)]"
     "\nUsage: Create fake chat actions, for fun. (Default action: typing)"
     "\n\nAnd many more"
-    "`\n>.nou ; .bot ; .gey ; .tf ; .paw ; .taco ; .nih ;`"
+    "`\n>.nou ; .bot ; .gey ; .tf ; .paw ; .tai ; .nih ;`"
     "`\n>.fag ; .gtfo ; .stfu ; .lol ; .lool ; .fail ; .leave`"
     "`\n>.iwi ; .sayhi ; .koc ; .gas ; .earth ; .love ; .rain`"
     "`\n>.penis ; .emo ; .fuck ; .ok ; .skull`"
