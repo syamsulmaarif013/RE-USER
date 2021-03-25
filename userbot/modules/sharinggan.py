@@ -7,19 +7,19 @@ from userbot import bot, TEMP_DOWNLOAD_DIRECTORY, CMD_HELP
 
 @register(outgoing=True, pattern=r'^.kamuii(:? |$)([1-8])?')
 async def _(fry):
-    await fry.edit("`Merubah muka kau menjadi benjot asu rasakan 😤!......`")
+    await fry.edit("`Proses Merubah Muka Jelek Makin Jelek! Bersiaplah...`")
     level = fry.pattern_match.group(2)
     if fry.fwd_from:
         return
     if not fry.reply_to_msg_id:
-        await fry.edit("`Balas di Sticker Goblok!!...`")
+        await fry.edit("`Balas Di Gambar/Stiker Tolol!`")
         return
     reply_message = await fry.get_reply_message()
     if not reply_message.media:
-        await fry.edit("`Gambar tidak di dukung...`")
+        await fry.edit("`Gagal! Sudah Terlalu Jelek, Cari Yang Lain.`")
         return
     if reply_message.sender.bot:
-        await fry.edit("`Balas di Sticker Goblok!!!...`")
+        await fry.edit("`Balas Di Gambar/Stiker Tolol...`")
         return
     chat = "@image_deepfrybot"
     message_id_to_reply = fry.message.reply_to_msg_id
@@ -38,7 +38,7 @@ async def _(fry):
             """ - don't spam notif - """
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await fry.reply("`Please unblock` @image_deepfrybot`...`")
+            await fry.reply("`Unblock` @image_deepfrybot`...`")
             return
         if response.text.startswith("Forward"):
             await fry.edit("`Please disable your forward privacy setting...`")
@@ -69,19 +69,19 @@ async def _(fry):
 
 @register(outgoing=True, pattern=r'^.df(:? |$)([1-8])?')
 async def _(fry):
-    await fry.edit("`Deepfryer......`")
+    await fry.edit("`Gii Proses Sabar Asu......`")
     level = fry.pattern_match.group(2)
     if fry.fwd_from:
         return
     if not fry.reply_to_msg_id:
-        await fry.edit("`Balas di Sticker Goblok!!...`")
+        await fry.edit("`Balas Di Gambar/Stiker Tolol!`")
         return
     reply_message = await fry.get_reply_message()
     if not reply_message.media:
-        await fry.edit("`Gambar tidak di dukung...`")
+        await fry.edit("`Gagal! Sudah Jelek, Cari Yang Lain.`")
         return
     if reply_message.sender.bot:
-        await fry.edit("`Balas di Sticker Goblok!!!...`")
+        await fry.edit("`Balas di Gambar/Stiker Tolol!`")
         return
     chat = "@image_deepfrybot"
     message_id_to_reply = fry.message.reply_to_msg_id
@@ -132,5 +132,5 @@ async def _(fry):
 CMD_HELP.update({
     "sharinggan":
     "`.kamuii` or `.kamuii` [level(1-8)]"
-    "\nUsage: deepfry image/sticker from the reply."
+    "\nUsage: Merubah Gambar/Stiker yang Di ."
 })
