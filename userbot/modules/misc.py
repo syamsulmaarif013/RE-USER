@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "◡ ᴏᴡɴᴇʀ:[LEO ANGKASA](https://t.me/leoangkasaaa)\n \n◡ ʀᴇᴘᴏsɪᴛᴏʀʏ:[SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot) \n \n◡ ᴄʜᴀɴɴᴇʟ:[SUPPORT](https://t.me/storyangkasa)\n     \n"
+        "◡̈ ᴏᴡɴᴇʀ:[SPACE-BOY](https://t.me/leoangkasaaa)\n \n◡̈ ʀᴇᴘᴏsɪᴛᴏʀʏ:[SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot) \n \n◡̈ ᴄʜᴀɴɴᴇʟ:[SUPPORT](https://t.me/storyangkasa)\n     \n"
     )
 
 
@@ -134,7 +134,7 @@ async def repo_is_here(wannasee):
 
 @register(outgoing=True, pattern="^.channel$")
 async def repo_is_here(wannasee):
-    """ For .usergay command, just returns the repo URL. """
+    """ For .channel command, just returns the repo URL. """
     await wannasee.edit(
         "📝 **Channel Offiacial:** [CHANNEL](https://t.me/storyangkasa)"
     )
