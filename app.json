@@ -1,6 +1,6 @@
 {
   "name": "BOT-SPACE FROM BASE KAMPANG-BOT",
-  "description": "[SPACE BOT] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
+  "description": "[SPACE BOT] A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
   "logo": "https://telegra.ph/file/2bd77e1e48b8982d7f0c0.jpg",
   "keywords": [
     "telegram",
@@ -193,7 +193,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
-      "value": "ISI KOTA LU YA",
+      "value": "Jakarta",
       "required": false
     },
     "LOGSPAMMER": {
