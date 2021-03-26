@@ -20,7 +20,7 @@ async def help(event):
         if args in CMD_HELP:
             await event.edit(str(CMD_HELP[args]))
         else:
-            await event.edit("**Salah Module GOBLOKKKKK!!**")
+            await event.edit("**Module Tidak Tersedia!**")
             await asyncio.sleep(18)
             await event.delete()
     else:
@@ -28,7 +28,7 @@ async def help(event):
             \n│   Help for [SPACE-BOT]\
             \n╰►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╯ \
             \n╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\
-            \n│   Untuk melihat lengkap Command\
+            \n│   Untuk Melihat Semua Command\
             \n│   Contoh: .help <nama module>\
             \n│   Jumlah Module: {len(modules)}\
            \n╰►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╯")
