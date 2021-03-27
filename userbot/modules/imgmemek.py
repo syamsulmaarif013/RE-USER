@@ -535,7 +535,7 @@ async def phcomment(event):
     await purge()
 
 CMD_HELP.update({
-    "imgmeme":
+    "gambar":
     "`.fgs`\
 \nUsage: Membuat Meme Dari Google Yang Di Custom Oleh User!\
 \n`.fgs [Teks Atas] ; [Teks Bawah]`\
