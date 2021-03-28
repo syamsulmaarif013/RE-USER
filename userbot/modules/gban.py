@@ -48,7 +48,6 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
-
 # port by: alvin nak anj  Lord-Userbot
 
 
@@ -78,7 +77,6 @@ async def handler(tele):
                             )
                         except BaseException:
                             return
-
 
 
 @register(outgoing=True, pattern="^.gban(?: |$)(.*)")
