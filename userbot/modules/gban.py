@@ -48,6 +48,39 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
+
+# port by: alvin nak anj  Lord-Userbot
+
+
+@bot.on(ChatAction)
+async def handler(tele):
+    if tele.user_joined or tele.user_added:
+        try:
+            from userbot.modules.sql_helper.gmute_sql import is_gmuted
+
+            guser = await tele.get_user()
+            gmuted = is_gmuted(guser.id)
+        except BaseException:
+            return
+        if gmuted:
+            for i in gmuted:
+                if i.sender == str(guser.id):
+                    chat = await tele.get_chat()
+                    admin = chat.admin_rights
+                    creator = chat.creator
+                    if admin or creator:
+                        try:
+                            await client.edit_permissions(
+                                tele.chat_id, guser.id, view_messages=False
+                            )
+                            await tele.reply(
+                                f"**╭✠╼━━━━━━❖━━━━━━━✠╮\n** `𝐆𝐛𝐚𝐧𝐧𝐞𝐝 𝐒𝐩𝐨𝐭𝐞𝐝   𝐁𝐎𝐓 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 `\n**➢🐨 •𝐆𝐁𝐚𝐧𝐧𝐞𝐝 𝐁𝐲: ** `{ALIVE_NAME}`\n**➢👥 •𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞: **[{guser.id}](tg://user?id={guser.id})\n**➢ ☠️ •𝐐𝐮𝐢𝐜𝐤 𝐀𝐜𝐭𝐢𝐨𝐧: ** `𝗚𝗹𝗼𝗯𝗮𝗹 𝗕𝗮𝗻𝗻𝗲𝗱`\n╰✠╼━━━━━━❖━━━━━━━✠╯"
+                            )
+                        except BaseException:
+                            return
+
+
+
 @register(outgoing=True, pattern="^.gban(?: |$)(.*)")
 async def gben(userbot):
     dc = userbot
