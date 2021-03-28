@@ -1,10 +1,13 @@
-# Fixed by:koala @mixiologist
-# Lord Userbot
+# Fixed By Koala @manusiarakitann
+# jangan datang hanya saat perlu :) aku bukan tuhan
+# Lord-Userbot
+# Lu kontollll..
 
-from userbot import ALIVE_NAME, CMD_HELP
+from userbot import ALIVE_NAME, CMD_HELP, bot
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from userbot.events import register
 from telethon.tl.types import MessageEntityMentionName
+from telethon.events import ChatAction
 
 
 async def get_full_user(event):
@@ -46,7 +49,6 @@ async def get_user_from_id(user, event):
         await event.edit(str(err))
         return None
     return user_obj
-
 
 # Port By: Alvin Ganteng  Lord-Userbot
 
