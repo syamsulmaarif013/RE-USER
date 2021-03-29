@@ -1,7 +1,11 @@
+# yang hapus credit anak babi , cape lah aku port
+# frm ultroid plugs thanks
+# Port by: Koala @manusiarakitan
 
+import cv2
 import os
 from userbot.events import register
-from userbot import CMD_HELP
+from userbot import CMD_HELP, bot
 from PIL import Image
 
 
@@ -9,11 +13,11 @@ from PIL import Image
 async def ultiny(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):
-        await eor(event, "`Reply To Media`")
+        await event.edit("`Balas Ke Pesan COK`")
         return
-    xx = await eor(event, "`processing...`")
-    ik = await userbot.download_media(reply)
-    im1 = Image.open("resources/extras/ultroid_blank.png")
+    xx = await event.edit("`Bimbalabim Jadi Kecil...`")
+    ik = await bot.download_media(reply)
+    im1 = Image.open("resources/extras/kampangbot.png")
     if ik.endswith(".tgs"):
         await event.client.download_media(reply, "ult.tgs")
         os.system("lottie_convert.py ult.tgs json.json")
@@ -80,5 +84,5 @@ async def ultiny(event):
 CMD_HELP.update(
     {
         "tiny": ".tiny\
-    \nTiny tiny lapyuuuu."
+    \nMemperkecil Ukuran Stiker."
     })
