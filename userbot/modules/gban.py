@@ -197,11 +197,11 @@ async def gunben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
-                await dark.edit(f"`➢ Pengampunan Untuk Jamet... Please Wait... `")
+                await dark.edit(f"`➢ Proses Pengampunan Hukuman `")
             except BaseException:
                 b += 1
     else:
-        await dark.edit("`Balas Ke Pesan Kontoll`")
+        await dark.edit("`Reply Pesan/Sertakan ID Pengguna`")
     try:
         if ungmute(user.id) is False:
             return await dark.edit("**Gila Lu? Dia Ga Masuk Daftar Gban Lu.**")
