@@ -242,15 +242,15 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Terkadang`")
     sleep(1)
-    await typew.edit("`Mencintai Seseorang`")
+    await typew.edit("`Sangat Lelah Menjalani Virtual`")
     sleep(1)
-    await typew.edit("`Hanya Akan Membuang Waktumu`")
+    await typew.edit("`Hanya Membuang Waktu`")
     sleep(1)
-    await typew.edit("`Ketika Waktumu Habis`")
+    await typew.edit("`Ketika Mau Real Life`")
     sleep(1)
-    await typew.edit("`Tambah Aja 5000`")
+    await typew.edit("`Baru Sadar Kalau Nolep`")
     sleep(1)
-    await typew.edit("`Bercanda`")
+    await typew.edit("`Yasudahlah Terima Aja`")
 
 
 # Create by myself @localheart
@@ -259,7 +259,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern="^.mf$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`maaf ga dulu` **ミ(ノ;_ _)ノ=3** ")
+        await e.edit("`Maaf Ga Dulu` **ミ(ノ;_ _)ノ** ")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -338,6 +338,6 @@ CMD_HELP.update(
     \n\n`.sayang`\
     \nUsage: untuk jadi buaya.\
     \n\n`.terkadang`\
-    \nUsage: Auk dah iseng doang."
+    \nUsage: Pas Edit Gi Bdmd Jadi Gini."
     }
 )
