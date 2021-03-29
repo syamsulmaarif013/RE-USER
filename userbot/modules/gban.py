@@ -154,11 +154,11 @@ async def gunben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Proses Pengampunan Sedang Menyala`")
+        dark = await dc.reply("`➢ Proses Pencabutan Hukuman Diaktifkan`")
     else:
-        dark = await dc.edit("` Pengampunan Hukuman Sedang Di Proses!`")
+        dark = await dc.edit("`➢ Mencabut Hukuman Sedang Di Proses`")
     me = await userbot.client.get_me()
-    await dark.edit(f"`[{user.first_name}](tg://user?id={user.id}) Telah Di Ampuni, Lain Kali Gausah Caper ya ASUUUU...`")
+    await dark.edit(f"`Pencabutan Hukuman Berhasil, Jangan Caper Lagi TOLOLLL...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -176,10 +176,10 @@ async def gunben(userbot):
         if not reason:
             reason = "Private"
     except BaseException:
-        return await dark.edit("`Syntax Eror Asu 🚫`")
+        return await dark.edit("`Syntax Error 🚫`")
     if user:
         if user.id == 1545589745:
-            return await dark.edit("**Gua Kebal Dari GBAN Lu!**")
+            return await dark.edit("**Gua Kebal Dari Gban Orang Jelek Kaya Lu...**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
         except BaseException:
@@ -197,14 +197,14 @@ async def gunben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
-                await dark.edit(f"`Pengampunan [{user.first_name}](tg://user?id={user.id}) Sedang Di Proses... `")
+                await dark.edit(f"`➢ Pengampunan Untuk Jamet... Please Wait... `")
             except BaseException:
                 b += 1
     else:
-        await dark.edit("`Balas Pesannya Asu`")
+        await dark.edit("`Balas Ke Pesan Kontoll`")
     try:
         if ungmute(user.id) is False:
-            return await dark.edit("**Lawak Lu Badut? Dia Ga Masuk GBAN List Lu Goblok.**")
+            return await dark.edit("**Gila Lu? Dia Ga Masuk Daftar Gban Lu.**")
     except BaseException:
         pass
     return await dark.edit(
