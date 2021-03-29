@@ -92,3 +92,4 @@ scipy
 wordcloud
 scikit-image
 pendulum
+opencv-python
