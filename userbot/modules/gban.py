@@ -154,7 +154,7 @@ async def gunben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply(f"`Proses Pengampunan [{user.first_name}](tg://user?id={user.id}) Sedang Menyala`")
+        dark = await dc.reply("`Proses Pengampunan Sedang Menyala`")
     else:
         dark = await dc.edit("` Pengampunan Hukuman Sedang Di Proses!`")
     me = await userbot.client.get_me()
