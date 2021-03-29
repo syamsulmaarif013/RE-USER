@@ -144,6 +144,7 @@ async def gben(userbot):
         pass
     return await dark.edit(
         f"**❂ EKSEKUTOR:** `{ALIVE_NAME}`\n**❂ USER:** [{user.first_name}](tg://user?id={user.id})\n**❂ HUKUMAN:** `Global Banned`"
+        
     )
 
 
@@ -208,6 +209,7 @@ async def gunben(userbot):
         pass
     return await dark.edit(
         f"**❂ EKSEKUTOR:** `{ALIVE_NAME}`\n**❂ nama Jamet:** [{user.first_name}](tg://user?id={user.id})\n**❂ Pengampunan:** `Membatalkan Global Banned`"
+        
     )
 
 
