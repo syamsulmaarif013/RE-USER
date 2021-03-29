@@ -14,18 +14,18 @@ async def insta(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await event.edit("`Balas Ke Link Untuk Download Cok.`")
+        await event.edit("`Reply Link Asu.`")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.text:
-        await event.edit("`Link Ny Mana Njing?.`")
+        await event.edit("`Sertakan LinkNya.`")
         return
     chat = "@SaveAsbot"
     reply_message.sender
     if reply_message.sender.bot:
-        await event.edit("Apalah Apalah Njing.")
+        await event.edit("Sabar Bentar.")
         return
-    await event.edit("`Proses Bentar Su...` 😡")
+    await event.edit("`Lagi Proses...` ⌛")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -34,18 +34,18 @@ async def insta(event):
             await event.client.send_message(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await event.edit("@SaveAsbot'u `Unblock Dulu Lah Babi`")
+            await event.edit("@SaveAsbot'u `Unblock Dulu Terus Coba Lagi`")
             return
         if response.text.startswith("Forward"):
             await event.edit(
-                "Wah Private Nih Su Hmmm."
+                "Akun Private Nih Mek."
             )
         else:
             await event.delete()
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"@manusiarakitann 🐨",
+                caption=f"@storyangkasa 🚀",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
             await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
@@ -58,9 +58,9 @@ async def DeezLoader(event):
         return
     dlink = event.pattern_match.group(1)
     if ".com" not in dlink:
-        await event.edit("`Link Ny Mana Su? Mau Di Downlod Gak?`")
+        await event.edit("`Sertakan LinkNya Asu`")
     else:
-        await event.edit("**Lagi Download Bentar** 🎶")
+        await event.edit("**Lagi Proses Download** 🎶")
     chat = "@DeezLoadBot"
     async with bot.conversation(chat) as conv:
         try:
@@ -73,7 +73,7 @@ async def DeezLoader(event):
 #                                   #
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await event.edit("@DeezLoadBot'Unblok Dulu La Asu.")
+            await event.edit("@DeezLoadBot'Unblok Lalu Coba Lagi.")
             return
         await bot.send_file(event.chat_id, song, caption=details.text)
 
@@ -82,7 +82,7 @@ CMD_HELP.update(
         "sosmed": ">`.pint`"
         "\nUsage: Download Media Dari Pinterest"
         "\n\n>`.tik`"
-        "\nUsage: Download Vidip Tiktod Jedag Jedug."
+        "\nUsage: Download Vidio TikTok."
         "\n\n>`.ig`"
         "\nUsage: Download Media Dari Instagram."
         "\n\n>`.dez`"
