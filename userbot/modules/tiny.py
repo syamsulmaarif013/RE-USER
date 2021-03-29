@@ -13,9 +13,9 @@ from PIL import Image
 async def ultiny(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):
-        await event.edit("`Balas Ke Pesan COK`")
+        await event.edit("`Balas Ke Pesan!`")
         return
-    xx = await event.edit("`Bimbalabim Jadi Kecil...`")
+    xx = await event.edit("`Bimsalabim Jadi Kecil...`")
     ik = await bot.download_media(reply)
     im1 = Image.open("resources/extras/kampangbot.png")
     if ik.endswith(".tgs"):
