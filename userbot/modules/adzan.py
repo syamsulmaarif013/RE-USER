@@ -39,7 +39,7 @@ async def get_adzan(adzan):
     isya = parsed["results"]["datetime"][0]["times"]["Isha"]
 
     result = (
-        f"**Jadwal Sholat**:\n"
+        f"**Waktu Adzan ⏳**:\n"
         f"📅 `{date} | {timezone}`\n"
         f"🌏 `{city} | {country}`\n\n"
         f"**Imsak :** `{imsak}`\n"
@@ -53,5 +53,5 @@ async def get_adzan(adzan):
     await adzan.edit(result)
 
 
-CMD_HELP.update({"adzan": "\n\n`>.adzan <city>`"
-                 "\nUsage: Gets the prayer time for moslem."})
+CMD_HELP.update({"adzan": "\n\n`>.adzan <kota>`"
+                 "\nUsage: Menunjukkan Waktu Adzan."})
