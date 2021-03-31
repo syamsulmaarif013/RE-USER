@@ -27,27 +27,27 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
-    "    APA LU PANTEK?\n"
-    f"  MAU GANGGUIN DIKTATOR `{DEFAULTUSER}` ?\n"
+    "   PM PERMIT BY SPACE-BOT\n"
+    f"  JANGAN SPAM `{DEFAULTUSER}\n"
     "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n\n"
 
-    f"Gua Asistennya `{DEFAULTUSER}`\n"
+    f"Tertanda Asisstan `{DEFAULTUSER}`\n"
     "╾─────────────────────╼\n\n"
 
     "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
-    " Baca Goblok\n"
-    " Gausah Spam Ya Telaso\n"
-    " Lu Bandel?\n"
-    " Gua Bom Lu Asuu\n"
-    " Tungguin Aja Ya Anjeng Sampai Bos\n"
-    f" `{DEFAULTUSER}` Ngebaca Pesan Elu\n"
+    " BACA BIAR PINTER!\n"
+    " JANGAN MALAS MEMBACA!!\n"
+    " DILARANG UNTUK SPAM!\n"
+    " LU NORAK KALAU SPAM!\n"
+    " TUNGGU HINGGA PESAN ANDA DITERIMA\n"
+    f" `{DEFAULTUSER}`!\n"
     "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n\n"
 
     "╾─────────────────────╼\n"
-    "   😡😡TELASOOO😡😡\n"
+    "   🚫🚫 DILARANG SLAM 🚫🚫\n"
     "─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇\n"
-    f"- 👽Asisten nya `{DEFAULTUSER}`\n"
-    "- DIKENTOT OLEH 👽SPACE-BOT👽")
+    f"- 👽ASISTEN `{DEFAULTUSER}`\n"
+    "- PM-PERMIT BY 👽SPACE-BOT👽")
 # =================================================================
 
 
@@ -105,9 +105,9 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 4:
                 await event.respond(
-                    "`You were spamming my PM, which I didn't like.`\n"
-                    "`I Wouldn't let you to chat me again until further notice`\n"
-                    "`Bye`"
+                    "`Lu Spam Chat Gua, Dasar Lu Jamet Norak.`\n"
+                    "`Selamat Tinggal Jamet Norak!`\n"
+                    "`KONTOLLL`"
                 )
 
                 try:
@@ -210,7 +210,7 @@ async def notifon(non_event):
     await non_event.edit("`Notifications from unapproved PM's unmuted!`")
 
 
-@register(outgoing=True, pattern=r"^\.(?:approve|ok)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:a|ok)\s?(.)?")
 async def approvepm(apprvpm):
     """For .approve command, give someone the permissions to PM you."""
     try:
@@ -246,9 +246,9 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit("`OK, PM Lu Diterima Pantek People..`")
+        return await apprvpm.edit("`OK, PM Lu Diterima Karna Lu Cakep..`")
 
-    await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `OK, Pesan Telah Diterima..`")
+    await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `OK, Pesan Diterima Karna Lu Cakep..`")
     await apprvpm.delete(getmsg)
     await message.delete()
 
@@ -298,12 +298,12 @@ async def blockpm(block):
         aname = replied_user.id
         name0 = str(replied_user.first_name)
         await block.client(BlockRequest(aname))
-        await block.edit("`You've been blocked!`")
+        await block.edit("`SPAM=BLOK TOLOLLL, BYE!`")
         uid = replied_user.id
     else:
         await block.client(BlockRequest(block.chat_id))
         aname = await block.client.get_entity(block.chat_id)
-        await block.edit("`You've been blocked! \n bye....`")
+        await block.edit("`SPAM=BLOK TOLOLLL! \n BYE ASU....`")
         name0 = str(aname.first_name)
         uid = block.chat_id
 
@@ -400,24 +400,24 @@ async def add_pmsg(cust_msg):
 
 CMD_HELP.update(
     {
-        "pm": ">`.approve | .ok`"
-        "\nUsage: Approves the mentioned/replied person to PM."
+        "pm": ">`.a | .ok`"
+        "\nUsage: Untuk Menolak Pesan Dari User Lain."
         "\n\n>`.disapprove | .nopm`"
-        "\nUsage: Disapproves the mentioned/replied person to PM."
+        "\nUsage: Menolak Pesan Dari User Lain."
         "\n\n>`.block`"
-        "\nUsage: Blocks the person."
+        "\nUsage: Blokir Pengguna Lain."
         "\n\n>`.unblock`"
-        "\nUsage: Unblocks the person so they can PM you."
+        "\nUsage: UNBLOKIR Pengguna Lain."
         "\n\n>`.notifoff`"
-        "\nUsage: Clears/Disables any notifications of unapproved PMs."
+        "\nUsage: Matikan Notif Dari Pesan Yang Belum Diterima."
         "\n\n>`.notifon`"
-        "\nUsage: Allows notifications for unapproved PMs."
+        "\nUsage: Nyalakan Notif Dari Pesan Yang Belum Diterima."
         "\n\n>`.set pm_msg` <reply to msg>"
-        "\nUsage: Set your own Unapproved message"
+        "\nUsage: Atur Isi Pesan Otomatis"
         "\n\n>`.get pm_msg`"
-        "\nUsage: Get your current Unapproved message"
+        "\nUsage: Mendapatkan Isi Pesan Otomatis"
         "\n\n>`.reset pm_msg`"
-        "\nUsage: Get your remove your Unapproved message"
+        "\nUsage: Kembalikan Ke Awal Isi Pesan Otomatis"
         "\n\n*Custom unapproved message currently not able to set"
         "\nformated text like bold, underline, link, etc."
         "\nMessage will send in monoscape only"
