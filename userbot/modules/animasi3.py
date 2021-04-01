@@ -324,8 +324,22 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`TERIMALAH CINTA DARIKU MWAHH😘💕💞`")
 
-
 # Create by myself @localheart
+
+@register(outgoing=True, pattern='^.fck(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(".                       /¯ )\n"
+                     "                      /¯  /\n"
+                     "                    /    /\n"
+                     "              /´¯/'   '/´¯¯`•¸\n"
+                     "          /'/   /    /       /¨¯\\ \n"
+                     "        ('(   (   (   (  ¯~/'  ')\n"
+                     "         \\                        /\n"
+                     "          \\                _.•´\n"
+                     "            \\              (\n"
+                     "              \\  ")
+#Create By Alvin Lord-Userbot
 
 CMD_HELP.update(
     {
@@ -338,6 +352,8 @@ CMD_HELP.update(
     \n\n`.sayang`\
     \nUsage: untuk jadi buaya.\
     \n\n`.terkadang`\
-    \nUsage: Pas Edit Gi Bdmd Jadi Gini."
+    \nUsage: Pas Edit Gi Bdmd Jadi Gini.\
+    \n\n`.fck`\
+    \Usage: Liat Dah."
     }
 )
