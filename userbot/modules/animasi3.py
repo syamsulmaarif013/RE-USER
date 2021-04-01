@@ -345,7 +345,7 @@ async def typewriter(typew):
 # Create By Alvin Lord-Userbot
 
 CMD_HELP.update({
-    "animasi3": 
+    "animasi3":
     "`.gabut` ; `.dino`\
 \nUsage: ntahlah gabut doang.\
 \n\n`.gombal`\
