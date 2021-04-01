@@ -44,7 +44,7 @@ DEF_UNAPPROVED_MSG = (
     "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n\n"
 
     "╾─────────────────────╼\n"
-    "   🚫🚫 DILARANG SLAM 🚫🚫\n"
+    "     🚫 DILARANG SPAM 🚫\n"
     "─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇─̇\n"
     f"- 👽ASISTEN `{DEFAULTUSER}`\n"
     "- PM-PERMIT BY 👽SPACE-BOT👽")
@@ -246,7 +246,7 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit("`OK, PM Lu Diterima Karna Lu Cakep..`")
+        return await apprvpm.edit("`OK, PM Diterima Karna Lu Cakep..`")
 
     await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `OK, Pesan Diterima Karna Lu Cakep..`")
     await apprvpm.delete(getmsg)
