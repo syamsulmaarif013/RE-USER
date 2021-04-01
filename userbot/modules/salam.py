@@ -87,7 +87,6 @@ async def typewriter(typew):
     await typew.edit(f"**STRAWBERRY MANGGA APEL**")
     sleep(3)
     await typew.edit("`SORRY GAK LEVEL!`")
-# Owner @leoangkasaaa
 
 
 @register(outgoing=True, pattern='^\\.W(?: |$)(.*)')
@@ -97,9 +96,47 @@ async def typewriter(typew):
     await typew.edit(f"**STRAWBERRY MANGGA APEL**")
     sleep(3)
     await typew.edit("`SORRY GAK LEVEL!`")
-# Owner @leoangkasaaa
 
 
+@register(outgoing=True, pattern='^.ast(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("ASTAGHFIRULLAH MENGTOBAT......")
+
+
+@register(outgoing=True, pattern='^.K(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**HUWEEEKKK JIJIK ANJENGGG**")
+
+
+@register(outgoing=True, pattern='^.N(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**OWNER CAKEUP, BISMILLAH ADMIN.**")
+
+@register(outgoing=True, pattern='^.B(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**MENGONTOLLLL!!!!**")
+
+
+@register(outgoing=True, pattern='^.M(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**BISMILLAH NYANTOL SATU HIHIHI**")
+
+@register(outgoing=True, pattern='^.Q(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**KALIAN SEMUA KONTOL \n-KATA GUA**")
+
+
+@register(outgoing=True, pattern='^.C(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**LU JAMET, GAUSAH SOK KERAS YA ANJEENGGG!!**")
+    
 CMD_HELP.update({
     "salam":
     "`.P`\
@@ -107,5 +144,11 @@ CMD_HELP.update({
 \n\n`.L`\
 \nUsage: Untuk Menjawab Salam.\
 \n\n`.W`\
-\nUsage: Untuk Menolak Jamet."
+\nUsage: Untuk Menolak Jamet.\
+\n\n`.ast`\
+\nUsage: Liat sendiri.\
+\n\n`.M`\
+\nUsage: Liat Ae Lah.\
+\n\n`.K`\
+\nUsage: Liat Dah
 })
