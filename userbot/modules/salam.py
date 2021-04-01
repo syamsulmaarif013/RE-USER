@@ -115,6 +115,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**OWNER CAKEUP, BISMILLAH ADMIN.**")
 
+
 @register(outgoing=True, pattern='^.B(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -126,6 +127,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**BISMILLAH NYANTOL SATU HIHIHI**")
 
+
 @register(outgoing=True, pattern='^.Q(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -136,7 +138,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**LU JAMET, GAUSAH SOK KERAS YA ANJEENGGG!!**")
-    
+
 CMD_HELP.update({
     "salam":
     "`.P`\
