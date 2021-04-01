@@ -143,7 +143,7 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        r"\\**#GBANNED_USER**//" f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**Reason:**`GBANNED`")
+        r"\\**#GBANNED_USER**//" f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**Reason:**`GBANNED`"
 
     )
 
@@ -158,7 +158,7 @@ async def gben(userbot):
     else:
     dark=await dc.edit("`➢ Mencabut Hukuman Sedang Di Proses`")
     me=await userbot.client.get_me()
-    await dark.edit(f"`Hukumam GBAN Telah Dibatalkan...`")
+    await dark.edit(f"`Hukumam GBAN Telah Dibatalkan!`")
     my_mention="[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
