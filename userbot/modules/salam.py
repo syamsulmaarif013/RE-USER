@@ -138,8 +138,8 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**LU JAMET, GAUSAH SOK KERAS YA ANJEENGGG!!**")
-    
-    
+
+
 @register(outgoing=True, pattern='^.K(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
