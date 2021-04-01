@@ -15,7 +15,7 @@ async def ultiny(event):
     if not (reply and (reply.media)):
         await event.edit("`Balas Ke Pesan!`")
         return
-    xx = await event.edit("`Sedang Proses! Mohon Tunggu...`")
+    xx = await event.edit("`Sedang Proses...`")
     ik = await bot.download_media(reply)
     im1 = Image.open("kampangbot.png")
     if ik.endswith(".tgs"):
@@ -84,5 +84,5 @@ async def ultiny(event):
 CMD_HELP.update(
     {
         "tiny": ".tiny\
-    \nMemperkecil Ukuran Stiker."
+    \nMerubah Ukuran Stiker."
     })
