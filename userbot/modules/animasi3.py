@@ -340,6 +340,8 @@ async def typewriter(typew):
                      "          \\                _.•´\n"
                      "            \\              (\n"
                      "              \\  ")
+
+
 # Create By Alvin Lord-Userbot
 
 CMD_HELP.update(
@@ -353,8 +355,6 @@ CMD_HELP.update(
     \n\n`.sayang`\
     \nUsage: untuk jadi buaya.\
     \n\n`.terkadang`\
-    \nUsage: Pas Edit Gi Bdmd Jadi Gini.\
-    \n\n`.fck`\
-    \Usage: Liat Dah."
+    \nUsage: Pas Edit Gi Bdmd Jadi Gini."
     }
 )
