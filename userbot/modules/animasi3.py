@@ -326,6 +326,7 @@ async def typewriter(typew):
 
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.fck(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -339,7 +340,7 @@ async def typewriter(typew):
                      "          \\                _.•´\n"
                      "            \\              (\n"
                      "              \\  ")
-#Create By Alvin Lord-Userbot
+# Create By Alvin Lord-Userbot
 
 CMD_HELP.update(
     {
