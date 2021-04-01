@@ -152,5 +152,5 @@ CMD_HELP.update({
 \n\n`.M`\
 \nUsage: Liat Ae Lah.\
 \n\n`.K`\
-\nUsage: Liat Dah
+\nUsage: Liat Dah."
 })
