@@ -345,16 +345,17 @@ async def typewriter(typew):
 # Create By Alvin Lord-Userbot
 
 CMD_HELP.update({
-    "animasi3": "`.gabut` ; `.dino`\
-    \nUsage: ntahlah gabut doang.\
-    \n\n`.gombal`\
-    \nUsage: buat bercanda\
-    \n\n`.cinta`\
-    \nUsage: mengirim cintamu ke seseorang.\
-    \n\n`.sayang`\
-    \nUsage: untuk jadi buaya.\
-    \n\n`.terkadang`\
-    \nUsage: Pas Edit Gi Bdmd Jadi Gini.\
-    \n\n`.fck`\
-    \nUsage: Fuck "
+    "animasi3": 
+    "`.gabut` ; `.dino`\
+\nUsage: ntahlah gabut doang.\
+\n\n`.gombal`\
+\nUsage: buat bercanda\
+\n\n`.cinta`\
+\nUsage: mengirim cintamu ke seseorang.\
+\n\n`.sayang`\
+\nUsage: untuk jadi buaya.\
+\n\n`.terkadang`\
+\nUsage: Pas Edit Gi Bdmd Jadi Gini.\
+\n\n`.fck`\
+\nUsage: Fuck "
 })
