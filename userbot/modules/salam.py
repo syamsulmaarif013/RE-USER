@@ -26,7 +26,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**ANGKASA BAWA BOTOL**")
     sleep(3)
-    await typew.edit("`KALIAN SEMUA JAMET TOLOL!!!`")
+    await typew.edit("`KALIAN SEMUA JAMET TOLOLLL!!!`")
 # Owner @Si_Dian
 
 
@@ -104,6 +104,42 @@ async def typewriter(typew):
     await typew.edit("ASTAGHFIRULLAH MENGTOBAT......")
 
 
+@register(outgoing=True, pattern='^.k(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**HUWEEEKKK JIJIK ANJENGGG**")
+
+
+@register(outgoing=True, pattern='^.n(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**OWNER CAKEUP, BISMILLAH ADMIN.**")
+
+
+@register(outgoing=True, pattern='^.b(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**MENGONTOLLLL!!!!**")
+
+
+@register(outgoing=True, pattern='^.m(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**BISMILLAH NYANTOL SATU HIHIHI**")
+
+
+@register(outgoing=True, pattern='^.z(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**KALIAN SEMUA KONTOL \n-KATA GUA**")
+
+
+@register(outgoing=True, pattern='^.c(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**LU JAMET, GAUSAH SOK KERAS YA ANJEENGGG!!**")
+    
+    
 @register(outgoing=True, pattern='^.K(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -128,7 +164,7 @@ async def typewriter(typew):
     await typew.edit("**BISMILLAH NYANTOL SATU HIHIHI**")
 
 
-@register(outgoing=True, pattern='^.Q(?: |$)(.*)')
+@register(outgoing=True, pattern='^.Z(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**KALIAN SEMUA KONTOL \n-KATA GUA**")
