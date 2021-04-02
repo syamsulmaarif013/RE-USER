@@ -131,7 +131,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.z(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**KALIAN SEMUA KONTOL \n-KATA GUA**")
+    await typew.edit("**KALIAN SEMUA KONTOLLL... \n-KATA GUA**")
 
 
 @register(outgoing=True, pattern='^.c(?: |$)(.*)')
@@ -167,13 +167,25 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.Z(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**KALIAN SEMUA KONTOL \n-KATA GUA**")
+    await typew.edit("**KALIAN SEMUA KONTOLLLL... \n-KATA GUA**")
 
 
 @register(outgoing=True, pattern='^.C(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**LU JAMET, GAUSAH SOK KERAS YA ANJEENGGG!!**")
+
+  
+@register(outgoing=True, pattern='^.V(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(f"**{ALIVE_NAME} NIH BOUUSSHHH**")
+
+
+@register(outgoing=True, pattern='^.v(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(f"**{ALIVE_NAME} NIH BOUUSSHHH**")
 
 CMD_HELP.update({
     "salam":
@@ -185,8 +197,8 @@ CMD_HELP.update({
 \nUsage: Untuk Menolak Jamet.\
 \n\n`.ast`\
 \nUsage: Liat sendiri.\
-\n\n`.M`\
+\n\n`.M`; `.N` ; `.B` ; `.Z`\
 \nUsage: Liat Ae Lah.\
-\n\n`.K`\
+\n\n`.K` ; `.V`\
 \nUsage: Liat Dah."
 })
