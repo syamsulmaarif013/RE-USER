@@ -256,7 +256,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern="^.mf$")
+@register(outgoing=True, pattern="^.gdl$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`Maaf Ga Dulu` **ミ(ノ;_ _)ノ** ")
@@ -330,7 +330,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.fck(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit(".                       /¯ )\n"
+    await typew.edit("                        /¯ )\n"
                      "                      /¯  /\n"
                      "                    /    /\n"
                      "              /´¯/'   '/´¯¯`•¸\n"
