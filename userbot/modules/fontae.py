@@ -18,7 +18,7 @@ def aesthetify(string):
         yield chr(c)
 
 
-@register(outgoing=True, pattern=r"^\.ae(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.este(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -29,7 +29,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "Aestetik":
+    "estetikal":
     "`.ae <teks>`\
     \nUsage: Mengubah Font Teks"
 })
