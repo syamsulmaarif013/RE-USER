@@ -97,7 +97,7 @@ async def variable(var):
 
 @register(outgoing=True, pattern=r'^.set var (\w*) ([\s\S]*)')
 async def set_var(var):
-    await var.edit("`Setting information...`")
+    await var.edit("`Mengatur Informasi...`")
     variable = var.pattern_match.group(1)
     value = var.pattern_match.group(2)
     if variable in heroku_var:
@@ -107,7 +107,7 @@ async def set_var(var):
                 "**Change ConfigVar**:\n"
                 f"`{variable}` = `{value}`"
             )
-        await var.edit("`Information sets...`")
+        await var.edit("`Informasi Di Atur...`")
     else:
         if BOTLOG:
             await var.client.send_message(
@@ -115,7 +115,7 @@ async def set_var(var):
                 "**Add ConfigVar**:\n"
                 f"`{variable}` = `{value}`"
             )
-        await var.edit("`Information added...`")
+        await var.edit("`Informasi Ditambahkan...`")
     heroku_var[variable] = value
 
 
@@ -129,7 +129,7 @@ async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
     """
-    await dyno.edit("`Getting Information...`")
+    await dyno.edit("`Proses Mendapatkan Informasi...`")
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
         'AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -179,12 +179,12 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                "**Space-Bot Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n"
+                "**♛Space-Bot Usage♛**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n"
                 f"-> `Penggunaan Dyno `  **{app.name}**:\n"
                 f"    •**{AppHours} jam - "
                 f"{AppMinutes} menit  -  {AppPercentage}%**"
                 "\n ◐━─━─━─━─━──━─━─━─━─━◐\n"
-                "-> `Sisa Dyno Bulan Ini`:\n"
+                "-> `Sisa Penggunaan Dyno Bulan Ini`:\n"
                 f"    •**{hours} jam - {minutes} menit  "
                 f"-  {percentage}%**\n"
                 "╰━━━━━━━━━━━━━━━━━━━━╯"
