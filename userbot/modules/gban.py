@@ -143,7 +143,7 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        r"\\**#GBANNED_USER**//" f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**Reason:**`GBANNED`"
+        r"\\**#GBANNED_USER**//" f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**User ID:** `{user.id}`\n**Reason:**`{reason}`"
 
     )
 
@@ -208,7 +208,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        r"\\**#UNGBANNED_USER**//" f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**Reason:**`UNGBANNED`"
+        r"\\**#UNGBANNED_USER**//" f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**User ID:**`{user.id}`\n**Reason:**`{reason}`"
 
     )
 
