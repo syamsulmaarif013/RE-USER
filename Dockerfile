@@ -2,7 +2,7 @@
 FROM spacebot14/spaceman:space
 #
 # Clone repo and prepare working directory
-#
+# Angkasa/@leoangkasaaa
 RUN git clone -b Kampang https://github.com/AngkasaBoy/Space-Bot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
