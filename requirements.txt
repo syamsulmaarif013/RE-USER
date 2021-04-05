@@ -6,7 +6,7 @@ async_generator
 cowpy
 psutil
 wget
-TgCrypto>=1.2.0
+telethon-tgcrypto
 cffi>=1.0.0
 dnspython
 emoji
