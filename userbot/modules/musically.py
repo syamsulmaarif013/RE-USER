@@ -114,7 +114,7 @@ Pencipta - {}
         event.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"**➻ Judul:** {rip_data['title']}\n**➻ Artis:** {rip_data['uploader']}\n**➻ 𝐅𝐢𝐧𝐝 𝐁𝐲: {ALIVE_NAME}",
+        caption=f"**➻ Judul:** {rip_data['title']}\n**➻ Artis:** {rip_data['uploader']}\n**➻ 𝐅𝐢𝐧𝐝 𝐁𝐲:** {ALIVE_NAME}",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),
