@@ -151,12 +151,12 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER", None)
 
 # untuk memberi media pada pmpermit
 PM_PIC = os.environ.get(
-    "https://telegra.ph/file/e659afa39091f773c67b2.jpg", None)
+    "https://telegra.ph/file/beae27b476390a5712a80.jpg", None)
 
 # untuk perintah .koalalive
 KAMPANG_TEKS_KUSTOM = os.environ.get(
     "KAMPANG_TEKS_KUSTOM",
-    "Join Gaes @caritemanhidop")
+    "IAM SPACE-BOT")
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -188,7 +188,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/c0784a45048bb697bf682.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/42339eceb3b501267cc63.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
