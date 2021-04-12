@@ -134,7 +134,7 @@ CMD_HELP.update(
         "\n\n>`.tektok`"
         "\nUsage: Download Video TikTok Tanpa Watermark."
         "\n\n>`.liked`"
-        "\nUsage: Download Video Dari Like App
+        "\nUsage: Download Video Dari Like App."
 
 
     }
