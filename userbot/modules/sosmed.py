@@ -4,7 +4,7 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.events import register
-from userbot import bot, CMD_HELP
+from userbot import bot, CMD_HELP, ALIVE_NAME
 
 
 @register(outgoing=True, pattern="^.pint ?(.*)")
@@ -45,7 +45,7 @@ async def insta(event):
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"@storyangkasa 🚀",
+                caption=f"File By {ALIVE_NAME}",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
             await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
