@@ -66,9 +66,9 @@ async def quotess(qotli):
                 """ - don't spam notif - """
                 await bot.send_read_acknowledge(conv.chat_id)
             except YouBlockedUserError:
-                return await qotli.reply("```Unblock @QuotLyBot terus coba lagi```")
+                return await qotli.reply("```Unblock @QuotLyBot lalu coba lagi```")
             if response.text.startswith("Hi!"):
-                await qotli.edit("```Can you kindly disable your forward privacy settings for good?```")
+                await qotli.edit("```Hidupkan privasi pesan terusan lalu coba lagi```")
             else:
                 await qotli.delete()
                 await bot.forward_messages(qotli.chat_id, response.message)
