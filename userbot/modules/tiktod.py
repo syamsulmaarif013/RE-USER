@@ -12,7 +12,7 @@ from userbot.events import register
 # Alvin Gans
 
 
-@register(outgoing=True, pattern="^.tiktok(?: |$)(.*)")
+@register(outgoing=True, pattern="^.tekotek(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -42,5 +42,5 @@ async def _(event):
 # Alvin Gans
 CMD_HELP.update(
     {
-        "tiktok": "**Modules:** __Tik Tok__\n\n**Perintah:** `.tiktok <Link Tiktok>`"
+        "tekotek": "**Modules:** __Tik Tok__\n\n**Perintah:** `.tiktok <Link Tiktok>`"
         "\n**Penjelasan:** Download Video Tiktok Tanpa Watermark"})
