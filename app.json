@@ -1,7 +1,7 @@
 {
   "name": "SPACE-BOT",
   "description": "[SPACE BOT] A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
-  "logo": "https://telegra.ph/file/fa6169d052db05cc99726.jpg",
+  "logo": "https://telegra.ph/file/42339eceb3b501267cc63.jpg",
   "keywords": [
     "telegram",
     "userbot",
