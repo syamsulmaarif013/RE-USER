@@ -1,7 +1,7 @@
 {
-  "name": "BOT-SPACE FROM BASE KAMPANG-BOT",
+  "name": "SPACE-BOT",
   "description": "[SPACE BOT] A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
-  "logo": "https://telegra.ph/file/2bd77e1e48b8982d7f0c0.jpg",
+  "logo": "https://telegra.ph/file/fa6169d052db05cc99726.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -163,7 +163,6 @@
     },
     "G_BAN_LOGGER_GROUP": {
       "description": "Add all sudo bots in your group and type id of that group.",
-      "value": "ISI ID GRUP",
       "required": false
     },
     "G_DRIVE_DATA": {
