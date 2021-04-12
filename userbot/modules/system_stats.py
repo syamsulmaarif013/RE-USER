@@ -20,7 +20,7 @@ import time
 from datetime import datetime
 import psutil
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, StartTime, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, StartTime, bot, KAMPANG_TEKS_KUSTOM
 from userbot.events import register
 
 
@@ -232,7 +232,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**❱━━━━━❰ sᴘᴀᴄᴇ ᴜsᴇʀʙᴏᴛ ❱━━━━━❰**\n\n"
+        f"**❱━━━━━❰ {KAMPANG_TEKS_KUSTOM} ❱━━━━━❰**\n\n"
         f"⫸ **sᴘᴀᴄᴇɴᴀᴍᴇ**     \n   ➲ `{DEFAULTUSER}` \n"
         f"⫸ **ᴜsᴇʀɴᴀᴍᴇ** \n   ➲ `@{user.username}` \n"
         f"⫸ **ᴛᴇʟᴇᴛʜᴏɴ** \n   ➲ `Versi {version.__version__}` \n"
@@ -240,7 +240,7 @@ async def amireallyalive(alive):
         f"⫸ **ʙᴏᴛ ᴠᴇʀsɪᴏɴ**\n   ➲ `{BOT_VER}` \n"
         f"⫸ **ᴍᴏᴅᴜʟᴇ**    \n   ➲ `{len(modules)}` \n\n"
         f"⫸ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [SPACE-BOT](https://github.com/AngkasaBoy/Space-Bot)\n⫸ **sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ: **[CHANNEL](t.me/storyangkasa)\n⫸ **sᴜᴘᴘᴏʀᴛ ʙʏ:** [Leo Angkasa](t.me/leoangkasaaa)\n"
-        f"**❱━━━━━━━❰ ᴀsᴛʀᴏʙᴏʏ ❱━━━━━━━❰**")
+        f"**❱━━━━━━❰ sᴘᴀᴄᴇ - ʙᴏᴛ ❱━━━━━━❰**")
 
     if ALIVE_LOGO:
         try:
