@@ -77,9 +77,9 @@ async def kang(args):
             is_anim = True
             photo = 1
         else:
-            return await args.edit("`File Tidak Didukung AJG!`")
+            return await args.edit("`File Tidak Didukung!`")
     else:
-        return await args.edit("`Gagal Colong Cari Yang Laen!`")
+        return await args.edit("`Kang Stiker Gagal, Cari Yang Lain!`")
 
     if photo:
         splat = args.text.split()
@@ -250,8 +250,8 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            "`Nyolong Sticker SUKSES ANJENG muehehe!`"
-            f"\n    💥 **[KLIK GBLK](t.me/addstickers/{packname})** 💥\nBANGGA JADI KANG COLONG",
+            "`Kang Stiker Sukses!`"
+            f"\n**[KLIK DISINI](t.me/addstickers/{packname})** Untuk Melihat Pack Stiker!",
             parse_mode="md",
         )
 
@@ -284,7 +284,7 @@ async def resize_photo(photo):
 async def get_pack_info(event):
     if not event.is_reply:
         return await event.edit(
-            "`Aku tidak bisa mengambil info dari apapun, bisakah aku?!`"
+            "`Tidak Bisa Mendapatkan Info Stiker!`"
         )
 
     rep_msg = await event.get_reply_message()
@@ -295,10 +295,10 @@ async def get_pack_info(event):
         stickerset_attr = rep_msg.document.attributes[1]
         await event.edit("`Fetching details of the sticker pack, please wait..`")
     except BaseException:
-        return await event.edit("`Balas ke sticker anjenggg.`")
+        return await event.edit("`Balas ke sticker.`")
 
     if not isinstance(stickerset_attr, DocumentAttributeSticker):
-        return await event.edit("`Balas ke sticker anjenggg.`")
+        return await event.edit("`Balas ke sticker.`")
 
     get_stickerset = await bot(
         GetStickerSetRequest(
