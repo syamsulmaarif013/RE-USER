@@ -77,50 +77,6 @@ async def DeezLoader(event):
             return
         await bot.send_file(event.chat_id, song, caption=details.text)
 
-
-@register(outgoing=True, pattern="^.tektok ?(.*)")
-@register(outgoing=True, pattern="^.liked ?(.*)")
-async def insta(event):
-    if event.fwd_from:
-        return
-    if not event.reply_to_msg_id:
-        await event.edit("`Reply Link.`")
-        return
-    reply_message = await event.get_reply_message()
-    if not reply_message.text:
-        await event.edit("`Sertakan LinkNya.`")
-        return
-    chat = "@ttsavebot"
-    reply_message.sender
-    if reply_message.sender.bot:
-        await event.edit("Mohon Tunggu.")
-        return
-    await event.edit("`Lagi Proses...` ⌛")
-    async with event.client.conversation(chat) as conv:
-        try:
-            response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=1087584961)
-            )
-            await event.client.send_message(chat, reply_message)
-            response = await response
-        except YouBlockedUserError:
-            await event.edit("@ttsavebot'u `Unblock Dulu Terus Coba Lagi`")
-            return
-        if response.text.startswith("Forward"):
-            await event.edit(
-                "Gagal! Ini Akun Private."
-            )
-        else:
-            await event.delete()
-            await event.client.send_file(
-                event.chat_id,
-                response.message.media,
-                caption=f"Download By {ALIVE_NAME}",
-            )
-            await event.client.send_read_acknowledge(conv.chat_id)
-            await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
-            await event.delete()
-
 CMD_HELP.update(
     {
         "sosmed": ">`.pint`"
@@ -131,10 +87,6 @@ CMD_HELP.update(
         "\nUsage: Download Media Dari Instagram."
         "\n\n>`.dez`"
         "\nUsage: Download Lagu Via Deezloader."
-        "\n\n>`.tektok`"
-        "\nUsage: Download Video TikTok Tanpa Watermark."
-        "\n\n>`.liked`"
-        "\nUsage: Download Video Dari Like App."
 
 
     }
