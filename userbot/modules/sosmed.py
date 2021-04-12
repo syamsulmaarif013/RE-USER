@@ -76,7 +76,8 @@ async def DeezLoader(event):
             await event.edit("@DeezLoadBot'Unblok Lalu Coba Lagi.")
             return
         await bot.send_file(event.chat_id, song, caption=details.text)
-        
+
+
 @register(outgoing=True, pattern="^.tektok ?(.*)")
 @register(outgoing=True, pattern="^.liked ?(.*)")
 async def insta(event):
