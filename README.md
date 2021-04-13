@@ -15,7 +15,7 @@
 <h3 align="center">A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database.</h3>
 <p align="center">&nbsp;</p>
 
-# Based on Kampang-Bot [Kampang-Bot](https://github.com/ManusiaRakitan/Kampang-Bot)
+# Based On [Kampang-Bot](https://github.com/ManusiaRakitan/Kampang-Bot)
 
 <h2 align="center"><b>CHANNEL OFFICIAL: <a href="https://telegram.dog/storyangkasa">OFFICIAL CHANNEL</a></b></h2>
 <br>
@@ -37,9 +37,9 @@
 - [Generate on REPL Click](https://repl.it/@ManusiaRakitan/stringsession#README.md)
 ### Read more
 <details>
-  <summary><b>KLIK DISINI UNTUK TOMBOL DEPLOY PANTEK</b></summary>
+  <summary><b>KLIK DISINI UNTUK DEPLOY KE HEROKU</b></summary>
 
-## CARA DEPLOY? 🚫DIBACA BIAR PINTER🚫
+## CARA DEPLOY? JANGAN MALAS MEMBACA 📖
 
 ```
 * **[HEROKU](https://www.heroku.com/) Method** 🔧
@@ -57,7 +57,7 @@
 
 * DENGAN HEROKU:
 <p align="center">
-   <a href = "https://heroku.com/deploy?template=https://github.com/AngkasaBoy/Space-Bot/tree/Kampang"><img src="https://telegra.ph/file/04bff83ac45be821eb4a7.jpg" alt="Press to Takeoff" width="490px"></a>
+   <a href = "https://heroku.com/deploy?template=https://github.com/AngkasaBoy/Space-Bot/tree/Kampang"><img src="https://telegra.ph/file/00b6e7e6025ebfe87238e.jpg" alt="Press to Takeoff" width="300px"></a>
 </p>
 <br>
 
