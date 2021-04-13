@@ -136,7 +136,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """ For .channel command, just returns the repo URL. """
     await wannasee.edit(
-        "📝 **Channel Offiacial:** [CHANNEL](https://t.me/storyangkasa)"
+        "📝 **CHANNEL OFFICIAL:** [CHANNEL](https://t.me/storyangkasa)"
     )
 
 
