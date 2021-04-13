@@ -20,7 +20,7 @@
 <h2 align="center"><b>CHANNEL OFFICIAL: <a href="https://telegram.dog/storyangkasa">OFFICIAL CHANNEL</a></b></h2>
 <br>
 <p align="center">
-   <a href="https://github.com/AngkasaBoy/Space-Bot"><img src="https://telegra.ph/file/6234955e1c69ce6488e1e.jpg" alt="SPACE-BOT" width=400px></a>
+   <a href="https://github.com/AngkasaBoy/Space-Bot"><img src="https://telegra.ph/file/fa6169d052db05cc99726.jpg" alt="SPACE-BOT" width=400px></a>
    <br>
    <br>
 </p>
@@ -57,7 +57,7 @@
 
 * DENGAN HEROKU:
 <p align="center">
-   <a href = "https://heroku.com/deploy?template=https://github.com/AngkasaBoy/Space-Bot/tree/Kampang"><img src="https://telegra.ph/file/00b6e7e6025ebfe87238e.jpg" alt="Press to Takeoff" width="300px"></a>
+   <a href = "https://heroku.com/deploy?template=https://github.com/AngkasaBoy/Space-Bot/tree/Kampang"><img src="https://telegra.ph/file/00b6e7e6025ebfe87238e.jpg" alt="Press to Takeoff" width="230px"></a>
 </p>
 <br>
 
