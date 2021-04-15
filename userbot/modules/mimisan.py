@@ -67,7 +67,7 @@ async def memes(cat):
     meme_file = convert_toimage(output[1])
     meme = os.path.join("./temp", "catmeme.jpg")
     if gvarstatus("CNG_FONTS") is None:
-        CNG_FONTS = "userbot/helpers/styles/impact.ttf"
+        CNG_FONTS = "userbot/modules/impact.ttf"
     else:
         CNG_FONTS = gvarstatus("CNG_FONTS")
     if max(len(top), len(bottom)) < 21:
