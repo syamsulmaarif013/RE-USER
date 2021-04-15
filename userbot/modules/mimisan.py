@@ -16,12 +16,14 @@ from .sql_helper.globals import addgvar, gvarstatus
 from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
 from userbot.events import register
 
+
 def random_color():
     number_of_colors = 2
     return [
         "#" + "".join(random.choice("0123456789ABCDEF") for j in range(6))
         for i in range(number_of_colors)
     ]
+
 
 FONTS = "1. `ProductSans-BoldItalic.ttf`\n2. `ProductSans-Light.ttf`\n3. `RoadRage-Regular.ttf`\n4. `digital.ttf`\n5. `impact.ttf`"
 font_list = [
@@ -37,19 +39,19 @@ font_list = [
 async def memes(cat):
     if cat.fwd_from:
         return
-    cmd = cat.pattern_match.group(1)
-    catinput = cat.pattern_match.group(2)
-    reply = await cat.get_reply_message()
+    cmd=cat.pattern_match.group(1)
+    catinput=cat.pattern_match.group(2)
+    reply=await cat.get_reply_message()
     if not reply:
         return await edit_delete(cat, "`Reply to supported Media...`")
-    catid = await reply_id(cat)
-    san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+    catid=await reply_id(cat)
+    san=base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     if catinput:
         if ";" in catinput:
-            top, bottom = catinput.split(";", 1)
+            top, bottom=catinput.split(";", 1)
         else:
-            top = catinput
-            bottom = ""
+            top=catinput
+            bottom=""
     else:
         return await edit_delete(
             cat, "`what should i write on that u idiot give text to memify`"
