@@ -18,9 +18,9 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = f"`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n"
-    no_reason = "No Reason Given "
-    await event.edit("**Summoning out the mighty gban hammer ☠️**")
+    mentions = "\\#GBANNED// \n"
+    no_reason = "Global Banned "
+    await event.edit("**Proses Global Banned! Bersiaplah...**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, filter=ChannelParticipantsAdmins):
@@ -33,17 +33,16 @@ async def gbun(event):
         usname = replied_user.user.username
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
-        if idd == 1036951071:
+        if idd == 1545589745:
             await reply_message.reply("`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 6969$ to my master__ [Heyworld](tg://user?id=1036951071) __to release your account__😏")
         else:
-            jnl = ("`Warning!!`"
-                   "[{}](tg://user?id={})"
-                   f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
-                   "**Name: ** __{}__\n"
+            jnl = ("\\#GBANNED// \n\n"
+                   "USER: [{}](tg://user?id={}) \n"
                    "**ID : ** `{}`\n"
+                   f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
                    ).format(firstname, idd, firstname, idd)
             if usname is None:
-                jnl += "**Username: ** `Doesn't own a username!`\n"
+                jnl += "**Username: ** `Pengguna Tidak Memiliki Username`\n"
             elif usname != "None":
                 jnl += "**Username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
@@ -55,7 +54,7 @@ async def gbun(event):
             await reply_message.reply(jnl)
     else:
         mention = (
-            f"Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: No Reason Given. ")
+            f"\\#GBANNED// \n𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: `GLOBAL BANNED`. ")
         await event.reply(mention)
     await event.delete()
 
