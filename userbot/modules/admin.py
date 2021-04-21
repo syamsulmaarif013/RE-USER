@@ -585,7 +585,7 @@ async def rm_deletedacc(show):
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
-    mentions = f"<b>👾 🄿🄰🄽🅃🄴🄺'🅂 🄿🄴🄾🄿🄻🄴 🄳🄸 {title}:</b> \n"
+    mentions = f"<b>♕ **🄳🄰🄵🅃🄰🅁 🄰🄳🄼🄸🄽 🄳🄸** {title} ♕</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
@@ -614,7 +614,7 @@ async def pin(msg):
     to_pin = msg.reply_to_msg_id
 
     if not to_pin:
-        return await msg.edit("`Reply to a message to pin it.`")
+        return await msg.edit("`Balas pada pesan untuk sematkan.`")
 
     options = msg.pattern_match.group(1)
 
@@ -659,7 +659,7 @@ async def kick(usr):
     if not user:
         return await usr.edit("`Couldn't fetch user.`")
 
-    await usr.edit("`Proses Tendang Jamet...`")
+    await usr.edit("`Proses Tendang User...`")
 
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
@@ -669,10 +669,10 @@ async def kick(usr):
 
     if reason:
         await usr.edit(
-            f"`Keluarkan Si Jelek` [{user.first_name}](tg://user?id={user.id})`!`\nAlasan: {reason}"
+            f"`Keluarkan Jamet Jelek` [{user.first_name}](tg://user?id={user.id})`!`\nAlasan: {reason}"
         )
     else:
-        await usr.edit(f"`Keluarkan Si Jelek` [{user.first_name}](tg://user?id={user.id})`!`")
+        await usr.edit(f"`Keluarkan Jamet Jelek` [{user.first_name}](tg://user?id={user.id})`!`")
         await sleep(5)
         await usr.delete()
 
@@ -871,7 +871,7 @@ async def get_userdel_from_id(user, event):
 async def get_bots(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
-    mentions = f"<b>Bots in {title}:</b>\n"
+    mentions = f"<b>**BABU GRUP DI** {title}:</b>\n"
     try:
         if isinstance(show.to_id, PeerChat):
             return await show.edit("`I heard that only Supergroups can have bots.`")
