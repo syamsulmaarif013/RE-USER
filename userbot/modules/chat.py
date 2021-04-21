@@ -65,7 +65,7 @@ async def _(event):
     if not input_str:
         chat = to_write_chat
     else:
-        mentions = "Babu Grup 👷 Di {} channel: \n".format(input_str)
+        mentions = "**BABU GRUP DI** {} **CHANNEL**: \n".format(input_str)
         try:
             chat = await bot.get_entity(input_str)
         except Exception as e:
@@ -74,7 +74,7 @@ async def _(event):
     try:
         async for x in bot.iter_participants(chat, filter=ChannelParticipantsBots):
             if isinstance(x.participant, ChannelParticipantAdmin):
-                mentions += "\n ⚜️ [{}](tg://user?id={}) `{}`".format(
+                mentions += "\n ➣ [{}](tg://user?id={}) `{}`".format(
                     x.first_name, x.id, x.id)
             else:
                 mentions += "\n [{}](tg://user?id={}) `{}`".format(
@@ -108,7 +108,7 @@ async def log(log_text):
 @register(outgoing=True, pattern="^.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit("🄶🄲 🄻🅄 🄹🄴🄻🄴🄺, 🄲🄰🄱🅄🅃 🄳🅄🄻🅄 🄰🅂🅄...")
+    await leave.edit("∅ **GRUP JELEK NIH, CABUT LAH ASU** ∅")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
