@@ -128,7 +128,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """ For .string command, just returns the string URL. """
     await wannasee.edit(
-        "┏▼━━━━━━━━━━━━━━━━━▼┓ \n一[GET STRING](https://repl.it/@ManusiaRakitan/stringsession#README.md)一 \n┗▲━━━━━━━━━━━━━━━━━▲┛"
+        "┏▼━━━━━━━━━━━━━━━━━▼┓ \nㅤㅤㅤ[GET STRING IN HERE](https://repl.it/@ManusiaRakitan/stringsession#README.md) \n┗▲━━━━━━━━━━━━━━━━━▲┛"
     )
 
 
