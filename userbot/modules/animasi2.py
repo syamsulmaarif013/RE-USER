@@ -15,6 +15,16 @@ async def typewriter(typew):
     await typew.edit("`Dan yang terakhir adalah lu tukang ghosting`")
 
 
+@register(outgoing=True, pattern="^.gblk(?: |$)(.*)")
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(2)
+    await typew.edit("**INGAT GOBLOK, BAPAK LU BANTING TULANH**")
+    sleep(2)
+    await typew.edit("**EMAK LU BANTING HARGA BUAT NYEKOLAHIN LU**")
+    sleep(1)
+    await typew.edit("**LU MALAH GOBLOKNYA SAMPE KETULANG TULANG**")
+
 # Create by myself @localheart
 
 
@@ -22,7 +32,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "`HALLO TOLOL LU PASTI GABUT KAN? MAIN AMA GUA AJA KONTOL GUA BANTU BIAR GA GABUT `"
+        "`HALLO KONTOL! MAIN BOT INGAT TEMPAT YA TOLOL, BIAR GA NORAK KONTOL  `"
     )
     sleep(2)
     await typew.edit(
@@ -84,7 +94,7 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**PANTAUU JAMET**"
+        "\n**MISIII SLURRR**"
     )
 
 
@@ -140,6 +150,8 @@ CMD_HELP.update(
     \nUsage: bot.\
     \n\n`.sdby`\
     \nUsage: hiks\
+    \n\n`.gblk`\
+    \nUsage: serem\
     \n\n`.punten`\
     \nUsage: kesopanan.\
     \n\n`.pantau`\
