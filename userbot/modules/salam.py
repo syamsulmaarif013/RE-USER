@@ -114,9 +114,8 @@ async def typewriter(typew):
     await typew.edit(f"**GAUSAH SOK KERAS**")
     sleep(3)
     await typew.edit("`KEPALA BAPAK LU GUA TAMPOL SWALLOW, MAU?`")
-    
 
-    
+
 @register(outgoing=True, pattern='^\\.j(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -133,7 +132,8 @@ async def typewriter(typew):
     await typew.edit(f"**MUKA LU KAYA KONTOL**")
     sleep(3)
     await typew.edit("**DIEM AJA TOLOLLL...**")
-    
+
+
 @register(outgoing=True, pattern='^\\.alay(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -150,8 +150,8 @@ async def typewriter(typew):
     await typew.edit(f"**SEKONTOL KONTOLNYA SI KONTOL**")
     sleep(3)
     await typew.edit("**LEBIH KONTOLAN LU KONTOLLL...**")
-    
-        
+
+
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
