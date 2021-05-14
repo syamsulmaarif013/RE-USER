@@ -24,9 +24,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**ANGKASA BAWA BOTOL**")
+    await typew.edit(f"**DIJALAN KETEMU BOTOL**")
     sleep(3)
-    await typew.edit("`KALIAN SEMUA JAMET TOLOLLL!!!`")
+    await typew.edit("`KALIAN SEMUA JAMET KONTOLLL!!!`")
 # Owner @Si_Dian
 
 
@@ -34,9 +34,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**ANGKASA BAWA BOTOL**")
+    await typew.edit(f"**DIJALAN KETEMU BOTOL**")
     sleep(3)
-    await typew.edit("`KALIAN SEMUA JAMET TOLOLLL!!!`")
+    await typew.edit("`KALIAN SEMUA JAMET KONTOLLL!!!`")
 # Owner @Si_Dian
 
 
@@ -98,6 +98,60 @@ async def typewriter(typew):
     await typew.edit("`SORRY GAK LEVEL!`")
 
 
+@register(outgoing=True, pattern='^\\.o(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**GAUSAH SOK KERAS**")
+    sleep(3)
+    await typew.edit("**KEPALA BAPAK LU GUA TAMPOL SWALLOW, MAU?")
+
+
+@register(outgoing=True, pattern='^\\.O(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**GAUSAH SOK KERAS**")
+    sleep(3)
+    await typew.edit("`KEPALA BAPAK LU GUA TAMPOL SWALLOW, MAU?`")
+    
+
+    
+@register(outgoing=True, pattern='^\\.j(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**MUKA LU KAYA KONTOL**")
+    sleep(3)
+    await typew.edit("**DIEM AJA TOLOLLL...**")
+
+
+@register(outgoing=True, pattern='^\\.J(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**MUKA LU KAYA KONTOL**")
+    sleep(3)
+    await typew.edit("**DIEM AJA TOLOLLL...**")
+    
+@register(outgoing=True, pattern='^\\.alay(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**MAIN BOT MULU**")
+    sleep(3)
+    await typew.edit("**ALAY BANGET ASU!**")
+
+
+@register(outgoing=True, pattern='^\\.kuntul(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**SEKONTOL KONTOLNYA SI KONTOL**")
+    sleep(3)
+    await typew.edit("**LEBIH KONTOLAN LU KONTOLLL...**")
+    
+        
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -167,7 +221,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.Z(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**KALIAN SEMUA KONTOLLLL... \n-KATA GUA**")
+    await typew.edit("**KALIAN SEMUA KONTOLLLL...**")
 
 
 @register(outgoing=True, pattern='^.C(?: |$)(.*)')
@@ -193,12 +247,12 @@ CMD_HELP.update({
 \nUsage: Untuk Memberi Hujatan.\
 \n\n`.L`\
 \nUsage: Untuk Menjawab Salam.\
-\n\n`.W`\
-\nUsage: Untuk Menolak Jamet.\
+\n\n`.W` ; `.alay` ; `.kuntul`\
+\nUsage: serem nih anjeng.\
 \n\n`.ast`\
 \nUsage: Liat sendiri.\
 \n\n`.M`; `.N` ; `.B` ; `.Z`\
 \nUsage: Liat Ae Lah.\
-\n\n`.K` ; `.V`\
+\n\n`.K` ; `.V` ; `.O` ; `.J`\
 \nUsage: Liat Dah."
 })
