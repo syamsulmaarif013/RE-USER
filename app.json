@@ -1,7 +1,7 @@
 {
-  "name": "BOT-SPACE FROM BASE KAMPANG-BOT",
-  "description": "[SPACE BOT] A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
-  "logo": "https://telegra.ph/file/2bd77e1e48b8982d7f0c0.jpg",
+  "name": "RE-USER FROM BASE KAMPANG-BOT",
+  "description": "[RE-USER] A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
+  "logo": "https://telegra.ph/file/ca11bc157caaa3b52d1a7.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/AngkasaBoy/Space-Bot",
+  "repository": "https://github.com/syamsulmaarif013/RE-USER",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
-  "success_url": "https://t.me/leoangkasaaa",
+  "success_url": "https://t.me/Ndiritrus",
   "stack": "container",
   "env": {
     "API_KEY": {
