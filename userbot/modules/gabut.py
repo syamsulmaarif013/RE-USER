@@ -48,9 +48,9 @@ async def pingme(pong):
     await pong.edit("**☬sɪᴀᴘ ᴍᴇᴍʙᴀsᴍɪ ᴘᴀɴᴛᴇᴋ ᴘᴇᴏᴘʟᴇ ᴀsᴜ☬**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**✲ 🅂🄿🄰🄲🄴-🄿🄸🄽🄶** "
+    await pong.edit(f"**✲ RE-PING** "
                     f"\n ⫸ ᴾᴵᴺᴳᴬˢᵁ `%sms` \n"
-                    f"**✲ 🅂🄿🄰🄲🄴-🄽🄰🄼🄴** "
+                    f"**✲ RE-NAME** "
 
                     f"\n ⫸ ᴱᴷˢᴱᴷᵁᵀᴼᴿ『`{ALIVE_NAME}`』 \n" % (duration))
 
@@ -71,7 +71,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**SI ANGKASA BAWA BOTOL**")
+    await typew.edit(f"**SI REAGAN BAWA BOTOL**")
     sleep(3)
     await typew.edit("`KALIAN SEMUA BOCAH TOLOLLL!!!`")
 # Owner @Si_Dian
@@ -103,7 +103,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`Getting Information...`")
     sleep(1)
-    await typew.edit("**PENGGUNAAN SPACE-BOT 🚀**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Dyno ` **{ALIVE_NAME}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Penggunaan Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
+    await typew.edit("**PENGGUNAAN RE-USBOT 💦**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Dyno ` **{ALIVE_NAME}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Penggunaan Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
                      )
 # @mixiologist
 
