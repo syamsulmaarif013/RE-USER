@@ -98,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#NOTE \n"
-                "SPACE-BOT Berhasil Di Update")
+                "RE-USER Berhasil Di Update")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`SPACE🚀BOT\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`RE💦BOT\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**UPDATE Terbaru Untuk SPACE🚀BOT [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
+        changelog_str = f'**UPDATE Terbaru Untuk RE💦BOT [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog is too big, view the file to see it.`")
             file = open("output.txt", "w+")
@@ -214,10 +214,10 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Proses Update SPACE BOT🚀, ....🛠️`')
-        await event.edit('`Proses Update SPACE BOT🚀, loading....🛠️`')
-        await event.edit('`Proses Update SPACE BOT🚀, updating....🛠️`')
-        await event.edit('`Proses Update SPACE BOT🚀 silahkan tunggu goblokkk....🛠️`')
+        await event.edit('`Proses Update RE BOT🥵, ....🛠️`')
+        await event.edit('`Proses Update RE BOT🥵, loading....🛠️`')
+        await event.edit('`Proses Update RE BOT💦, updating....🛠️`')
+        await event.edit('`Proses Update RE BOT💦 silahkan tunggu goblokkk....🛠️`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
